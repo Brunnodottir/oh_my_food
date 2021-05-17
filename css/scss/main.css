@@ -1,7 +1,142 @@
-body {
+.loc {
+  background-color: #d3d3d3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: rebeccapurple;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.1rem;
+}
+
+.loc input {
+  background-color: #d3d3d3;
+  border: none;
+}
+
+.explore {
+  background-color: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10% 15%;
+}
+
+.explore .explore__btn {
+  border: none;
+  padding: 10px 30px;
+  background: linear-gradient(135deg, #FF79DA, #9356DC);
+  border-radius: 40px;
+  color: white;
+}
+
+.howtouse h1 {
+  width: 100%;
+}
+
+.howtouse .howtouse__steps {
+  padding: 10%;
+}
+
+.howtouse .howtouse__steps ul {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 2rem;
+}
+
+.howtouse .howtouse__steps ul .step {
+  -webkit-box-shadow: 0 0 0.8rem black;
+          box-shadow: 0 0 0.8rem black;
+  border-radius: 50px;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.howtouse .howtouse__steps ul .step .number {
+  display: inline;
+  height: 2rem;
+  width: 2rem;
+  background-color: #9356DC;
+  text-align: center;
+  line-height: 2rem;
+  color: white;
+  font-weight: 500;
+  border-radius: 50%;
+  margin-left: -1rem;
+  margin-right: 2rem;
+}
+
+.howtouse .howtouse__steps ul .step .fas {
+  color: grey;
+  margin-right: 1.5rem;
+}
+
+.main {
+  background-color: #f2f2f2;
+}
+
+.restaurants .restaurant__card {
+  display: block;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 1.3rem;
+  background-color: white;
+}
+
+.restaurants .restaurant__card .restaurant__card-image {
+  width: 100%;
+  height: 10rem;
+}
+
+.restaurants .restaurant__card .restaurant__card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.restaurants .restaurant__card .restaurant__card-container .like {
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.restaurants footer {
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
