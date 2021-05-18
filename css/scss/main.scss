@@ -43,7 +43,7 @@
      .howtouse {
          h1 {width: 100%;}
          .howtouse__steps {
-            padding:10%; 
+            margin-right: 10%;
             ul {padding: 2rem ;
                 display: flex;
                 flex-direction: column;
@@ -123,10 +123,10 @@ flex-direction: column;
 color: white;
 margin-top: 2rem;
 background-color: #535353;
+    a:visited {
+    color: white;}
   
  
 }
        
 
-a:visited {
-    color: white;}

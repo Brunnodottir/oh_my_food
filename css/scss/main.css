@@ -44,7 +44,7 @@
 }
 
 .howtouse .howtouse__steps {
-  padding: 10%;
+  margin-right: 10%;
 }
 
 .howtouse .howtouse__steps ul {
@@ -156,6 +156,10 @@ footer {
           flex-direction: column;
   color: white;
   margin-top: 2rem;
-  background-color: black;
+  background-color: #535353;
+}
+
+footer a:visited {
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
