@@ -44,3 +44,35 @@
        }}
      
 }
+
+
+@media(min-width: 768px)
+
+{
+.howtouse{
+    .howtouse__steps{
+        width: 50%;
+        margin: auto;
+
+    }
+    .step {height: 4em;}
+}
+}
+
+
+@media screen and (min-width: 1200px){
+
+.howtouse
+{
+    .howtouse__steps{
+        width: 50%;
+
+    .step {
+        height: 4em;
+
+    }
+    
+    }
+}
+
+}
