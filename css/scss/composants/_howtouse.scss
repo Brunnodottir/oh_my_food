@@ -2,7 +2,9 @@
 @import "../variables";
 
 .howtouse {
-    h1 {width: 100%;}
+    margin-top: 2rem;
+    h2 {
+           margin-left: 20px;}
     .howtouse__steps {
        margin-right: 10%;
        ul {padding: 2rem ;

@@ -2,21 +2,38 @@
   @import "./composants/howtouse";
   @import "./variables";
 
-
+body
+{
+    font-family: 'roboto', 'sans serif';
+      a
+      {text-decoration: none;}
+}
 
   
-
+header{
+    .logo{
+        padding: 1.2rem;
+        img {
+            width: 200px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
 
   .loc 
   {
     background-color: $color-loc;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+
+   
     padding: 1.1rem;
 
     input{
         background-color: $color-loc;
         border: none;
+        color: black;
       
 
     }
@@ -29,10 +46,12 @@
      align-items: center;
      justify-content: space-around;
      padding:10% 15%;
+      h2 {text-align: center; margin-bottom: 0;}
+      p {text-align: center; color: gray;}
 
      .explore__btn{
         border: none;
-        padding: 10px 30px;
+        padding: 15px 30px;
         background: linear-gradient(135deg,#FF79DA, #9356DC);
         border-radius: 40px;
         color:$secondary-color; }
@@ -42,27 +61,47 @@
 
   .main {
       background-color: $primary-color;
+      padding-bottom: 20px;
     
   }
 
 
   .restaurants {
+      h2{ 
+          padding-top: 2rem;
+          margin-left: 20px;
+      }
       .restaurant__card {
           display: flex;
           flex-direction: column;
-          border-radius: 1rem;
+          border-radius: 20px;
           margin-bottom: 1.3rem;
           background-color: $secondary-color;
-          box-shadow: 0 4px 8px 0 rgb(0, 0, 0 / 20%);
+          margin: 1.3rem;
+          box-shadow: 0 4px 8px 0 rgb(0, 0, 0 / 5%);
            .restaurant__card-image{
              overflow: hidden;
              object-fit: cover;
              width: 100%;
-             height: 10rem;}
+             height: 10rem;
+             border-radius: 20px 20px 0 0;
+            }
+             
           .restaurant__card-container{
              display: flex;
              flex-direction:row;
              justify-content:space-between;
+             .text{
+                 margin-left: 10px;
+                 margin-top: 10px;
+                 margin-bottom: 10px;
+                 color: black;
+                 font-size: smaller;
+                  h3 {margin:0;
+                padding-bottom: 5px;}
+                  p {margin:0;}
+
+             }
              .like{
                  margin-right: 20px;
                  margin-top: 20px;
@@ -76,13 +115,29 @@
 
 
 footer {
+    
+
 display: flex;
 flex-direction: column;
 color: white;
-margin-top: 2rem;
 background-color: #535353;
+padding-bottom: 20px;
+.options {margin-left: 20px;
+padding-top: 10px;
+font-family: 'roboto', 'sans-serif';
+display: flex;
+align-items: center;
+
+      p {
+          padding-left: 5px;
+      }}
     a:visited {
     color: white;}
+    .minilogo{
+        font-family: 'Shrikhand', 'cursive';
+        margin-left: 20px;
+        padding-top: 10px;
+    }
   
  
 }
