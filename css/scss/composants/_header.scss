@@ -1,0 +1,29 @@
+ @import '../variables'; 
+header{
+    .logo{
+        padding: 1.2rem;
+        img {
+            width: 200px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+  .loc 
+  {
+    background-color: $color-loc;
+    text-align: center;
+
+   
+    padding: 1.1rem;
+
+    input{
+        background-color: $color-loc;
+        border: none;
+        color: black;
+      
+
+    }
+  }

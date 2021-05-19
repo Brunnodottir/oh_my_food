@@ -83,37 +83,6 @@
   }
 }
 
-body {
-  font-family: 'roboto', 'sans serif';
-}
-
-body a {
-  text-decoration: none;
-}
-
-header .logo {
-  padding: 1.2rem;
-}
-
-header .logo img {
-  width: 200px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.loc {
-  background-color: #d3d3d3;
-  text-align: center;
-  padding: 1.1rem;
-}
-
-.loc input {
-  background-color: #d3d3d3;
-  border: none;
-  color: black;
-}
-
 .explore {
   background-color: #f2f2f2;
   display: -webkit-box;
@@ -149,9 +118,66 @@ header .logo img {
   color: white;
 }
 
-.main {
-  background-color: #f2f2f2;
+header .logo {
+  padding: 1.2rem;
+}
+
+header .logo img {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.loc {
+  background-color: #d3d3d3;
+  text-align: center;
+  padding: 1.1rem;
+}
+
+.loc input {
+  background-color: #d3d3d3;
+  border: none;
+  color: black;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  background-color: #535353;
   padding-bottom: 20px;
+}
+
+footer .options {
+  margin-left: 20px;
+  padding-top: 10px;
+  font-family: 'roboto', 'sans-serif';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .options p {
+  padding-left: 5px;
+}
+
+footer a:visited {
+  color: white;
+}
+
+footer .minilogo {
+  font-family: 'Shrikhand', 'cursive';
+  margin-left: 20px;
+  padding-top: 10px;
 }
 
 .restaurants h2 {
@@ -219,43 +245,17 @@ header .logo img {
   margin-top: 20px;
 }
 
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: white;
-  background-color: #535353;
+body {
+  font-family: 'roboto', 'sans serif';
+}
+
+body a {
+  text-decoration: none;
+}
+
+.main {
+  background-color: #f2f2f2;
   padding-bottom: 20px;
-}
-
-footer .options {
-  margin-left: 20px;
-  padding-top: 10px;
-  font-family: 'roboto', 'sans-serif';
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer .options p {
-  padding-left: 5px;
-}
-
-footer a:visited {
-  color: white;
-}
-
-footer .minilogo {
-  font-family: 'Shrikhand', 'cursive';
-  margin-left: 20px;
-  padding-top: 10px;
 }
 
 @media (min-width: 768px) {

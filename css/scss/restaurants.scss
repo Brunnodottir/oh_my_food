@@ -1,0 +1,60 @@
+@import "./composants/footer";
+@import "./composants/header";
+@import "./variables";
+
+
+
+body {
+    font-family: 'roboto', sans-serif;
+}
+.image_logo
+{
+    width: 100%;
+    height: 13rem;
+    margin-top: 0;
+    overflow: hidden;
+    object-fit: cover;
+    
+}
+
+.main{
+    background-color: $primary-color;
+    border-radius: 20px;
+    margin-top: -30px;
+     .main__title {
+         font-family: 'Shrikhand',cursive;}
+
+    .main__card{
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        margin-bottom: 1.3rem;
+        background-color: $secondary-color;
+        margin: 1.3rem;
+        box-shadow: 0 4px 8px 0 rgb(0, 0, 0 / 5%);
+        height: 70px;
+        .main__card__descr { display: flex; justify-content: space-around;
+            height: 40px;
+             .main__card__descr__text { flex-basis: 70%; font-size: small;
+                   h3 { margin: 0; flex-wrap: nowrap;}
+                }
+            .main__card__descr__price {
+                display: flex;
+                align-items: flex-end;
+            }
+        
+              }
+    }
+
+}
+
+       
+
+
+.cmmd {
+    border: none;
+    padding: 15px 30px;
+    background: linear-gradient(135deg,#FF79DA, #9356DC);
+    border-radius: 40px;
+    color:$secondary-color;
+ }

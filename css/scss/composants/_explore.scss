@@ -1,0 +1,21 @@
+@import "../variables";
+
+.explore{ background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding:10% 15%;
+     h2 {text-align: center; margin-bottom: 0;}
+     p {text-align: center; color: gray;}
+
+    .explore__btn{
+       border: none;
+       padding: 15px 30px;
+       background: linear-gradient(135deg,#FF79DA, #9356DC);
+       border-radius: 40px;
+       color:$secondary-color; }
+    }
+
+
+
