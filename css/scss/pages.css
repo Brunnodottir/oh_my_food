@@ -64,6 +64,31 @@ body {
   font-family: 'roboto', sans-serif;
 }
 
+body a {
+  text-decoration: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  padding: 1.2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 15%;
+}
+
+header .goback {
+  font-size: larger;
+}
+
 .image_logo {
   width: 100%;
   height: 13rem;
@@ -77,6 +102,7 @@ body {
   background-color: #f2f2f2;
   border-radius: 20px;
   margin-top: -30px;
+  overflow: overlay;
 }
 
 .main .main__title {
@@ -112,13 +138,22 @@ body {
 .main .main__card .main__card__descr .main__card__descr__text {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
-  font-size: small;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: black;
+  font-size: smaller;
 }
 
 .main .main__card .main__card__descr .main__card__descr__text h3 {
   margin: 0;
+  padding-bottom: 5px;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+}
+
+.main .main__card .main__card__descr .main__card__descr__text p {
+  margin: 0;
 }
 
 .main .main__card .main__card__descr .main__card__descr__price {
@@ -128,13 +163,21 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  font-size: smaller;
 }
 
-.cmmd {
+.bouton__commande {
+  text-align: center;
+  padding: 30px;
+}
+
+.bouton__commande .cmmd {
   border: none;
   padding: 15px 30px;
   background: linear-gradient(135deg, #FF79DA, #9356DC);
   border-radius: 40px;
   color: white;
+  font-size: 16px;
+  padding: 15px 70px;
 }
-/*# sourceMappingURL=restaurants.css.map */
+/*# sourceMappingURL=pages.css.map */
