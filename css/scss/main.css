@@ -180,13 +180,22 @@ footer .minilogo {
   padding-top: 10px;
 }
 
-body
 .restaurants h2 {
   padding-top: 2rem;
   margin-left: 20px;
 }
 
-body
+.restaurants .boutonnew {
+  background-color: #99E2D0;
+  border: 2px solid #99E2D0;
+  position: absolute;
+  right: 2em;
+  z-index: 200;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-family: 'roboto';
+}
+
 .restaurants .restaurant__card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,9 +210,9 @@ body
   margin: 1.3rem;
   -webkit-box-shadow: 0 4px 8px 0 black;
           box-shadow: 0 4px 8px 0 black;
+  position: relative;
 }
 
-body
 .restaurants .restaurant__card .restaurant__card-image {
   overflow: hidden;
   -o-object-fit: cover;
@@ -213,7 +222,6 @@ body
   border-radius: 20px 20px 0 0;
 }
 
-body
 .restaurants .restaurant__card .restaurant__card-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -227,7 +235,6 @@ body
           justify-content: space-between;
 }
 
-body
 .restaurants .restaurant__card .restaurant__card-container .text {
   margin-left: 10px;
   margin-top: 10px;
@@ -236,18 +243,15 @@ body
   font-size: smaller;
 }
 
-body
 .restaurants .restaurant__card .restaurant__card-container .text h3 {
   margin: 0;
   padding-bottom: 5px;
 }
 
-body
 .restaurants .restaurant__card .restaurant__card-container .text p {
   margin: 0;
 }
 
-body
 .restaurants .restaurant__card .restaurant__card-container .like {
   margin-right: 20px;
   margin-top: 20px;

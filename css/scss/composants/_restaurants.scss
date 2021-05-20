@@ -9,6 +9,16 @@
         padding-top: 2rem;
         margin-left: 20px;
     }
+     .boutonnew { background-color: #99E2D0;
+    border:2px solid #99E2D0;
+    position: absolute;
+    right: 2em; z-index: 200;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-family: 'roboto';
+    
+} 
+
     .restaurant__card {
         display: flex;
         flex-direction: column;
@@ -17,13 +27,16 @@
         background-color: $secondary-color;
         margin: 1.3rem;
         box-shadow: 0 4px 8px 0 rgb(0, 0, 0 / 5%);
+        position: relative;
+        
+
          .restaurant__card-image{
            overflow: hidden;
            object-fit: cover;
            width: 100%;
            height: 10rem;
            border-radius: 20px 20px 0 0;
-          }
+         }
            
         .restaurant__card-container{
            display: flex;
