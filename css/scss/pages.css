@@ -148,7 +148,7 @@ header .goback {
   border-radius: 20px;
   margin-bottom: 1.3rem;
   background-color: white;
-  margin: 1.3rem;
+  margin: 1em 1.3em 1em 1.3em;
   -webkit-box-shadow: 0 4px 8px 0 black;
           box-shadow: 0 4px 8px 0 black;
   height: 70px;
@@ -177,11 +177,13 @@ header .goback {
   padding-bottom: 5px;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  font-size: smaller;
 }
 
 .main .main__card .main__card__descr .main__card__descr__text p {
   margin: 0;
   padding-top: 5px;
+  font-size: small;
 }
 
 .main .main__card .main__card__descr .main__card__descr__price {
