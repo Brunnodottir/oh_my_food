@@ -296,6 +296,7 @@ footer .minilogo {
 
 .restaurants .restaurant__card .restaurant__card-container .like i {
   cursor: pointer;
+  font-size: larger;
 }
 
 .restaurants .restaurant__card .restaurant__card-container .like .far:hover {
