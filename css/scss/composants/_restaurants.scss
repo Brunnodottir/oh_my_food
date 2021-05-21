@@ -56,7 +56,10 @@
            .like{
                margin-right: 20px;
                margin-top: 20px;
-          .like:hover {background:linear-gradient(135deg $primary-elem-color, $secondary-elem-color);}
+            
+             i { cursor: pointer;}
+            .far:hover {
+            background: linear-gradient(135deg,#FF79DA, #9356DC)}
                
            }
          

@@ -39,7 +39,9 @@
                margin-right: 2rem;
            }
            .fas {color: grey;
-           margin-right: 1.5rem;}
+           margin-right: 1.5rem;
+           }
+         .fas:hover { color:$primary-elem-color;}
 }
 
        }}
@@ -47,8 +49,8 @@
 }
 .howtouse {
     .howtouse__steps {
-        .step:hover {background-color: $primary-elem-color;
-          i:hover {color:red;}}
+        .step:hover, {color: $primary-elem-color;
+          
 
     }}
 

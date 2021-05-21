@@ -65,7 +65,7 @@
 }
 
 .howtouse .howtouse__steps .step:hover {
-  background-color: #9356DC;
+  color: #9356DC;
 }
 
 .howtouse .howtouse__steps .step:hover i:hover {
@@ -127,6 +127,15 @@
   background: linear-gradient(135deg, #FF79DA, #9356DC);
   border-radius: 40px;
   color: white;
+}
+
+.explore .explore__btn:active, .explore .explore__btnfocus {
+  outline: 0;
+}
+
+.explore .explore__btn:hover {
+  background: linear-gradient(135deg, #9356DC, #FF79DA);
+  cursor: pointer;
 }
 
 header .logo {
@@ -273,8 +282,12 @@ footer .minilogo {
   margin-top: 20px;
 }
 
-.restaurants .restaurant__card .restaurant__card-container .like .like:hover {
-  background: linear-gradient(135deg #9356DC, #FF79DA);
+.restaurants .restaurant__card .restaurant__card-container .like i {
+  cursor: pointer;
+}
+
+.restaurants .restaurant__card .restaurant__card-container .like .far:hover {
+  background: linear-gradient(135deg, #FF79DA, #9356DC);
 }
 
 body {

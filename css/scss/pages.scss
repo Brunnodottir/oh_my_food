@@ -45,7 +45,13 @@ header {
          margin-left: 20px;}
         
         
- .like {margin-right: 20px;}}
+ .like {margin-right: 20px;
+        i { cursor: pointer;}
+    .far:hover {
+    background: linear-gradient(135deg,#FF79DA, #9356DC)}
+    
+    
+    }}
 
 
     .main__name {margin-left:20px;
@@ -68,18 +74,19 @@ header {
              .main__card__descr__text { flex-basis: 70%;
                 margin-left: 10px;
                 margin-top: 10px;
-                margin-bottom: 10px;
+                
                 color: black;
                    
                    h3 {margin:0;
                     padding-bottom: 5px; flex-wrap: nowrap; font-size: smaller;}
-                  p {margin:0; padding-top: 5px; font-size: small;}
+                  p {margin:0;; font-size: 0.9em;}
                 }
             .main__card__descr__price {
                 display: flex;
                 align-items: flex-end;
-                font-size: smaller;
+                font-weight: 700;
                 color: black;
+                font-size: 0.8em;
             }
         
               }
@@ -108,14 +115,16 @@ header {
 @media(min-width: 768px)
 
 {
- .containerall {width: 70%; margin: auto;}
+ .containerall {width: 80%; margin: auto;}
  .main {
     .menu { display: flex;
     flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-around;
 align-items: baseline;
-    .menu__group {display: flex; flex-direction: column; flex-basis: 50%;}
+    .menu__group {display: flex; flex-direction: column; flex-basis: 45%;
+margin: 10px;
+}
     .bouton__commande {flex-basis: 100%;}
 }
     .main__header {justify-content: center; flex-basis: 100%;}
@@ -126,9 +135,15 @@ margin-bottom: 1em;
 width: 90%;
 height: auto;
    .main__card__descr {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: nowrap;
+       justify-content: space-between;
+       padding: 15Px;
     .main__card__descr__text { flex-basis: 70%;
         h3 {font-size: 0.8em;}
-        p { font-size: 0.8em}
+        p { font-size: 0.8em;
+        }
     .main__card__descr__price { font-size: 0.8em; padding-bottom: 0.5em;}
         ;}
 

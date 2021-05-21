@@ -17,6 +17,11 @@
          , #FF79DA, #9356DC);
        border-radius: 40px;
        color: $secondary-color;
+       &:active, &focus {
+         outline:0;
+       }
+       &:hover { background: linear-gradient( 135deg, #9356DC, #FF79DA);
+      cursor: pointer;}
        }
     }
 
