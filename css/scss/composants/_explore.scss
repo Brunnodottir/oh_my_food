@@ -12,9 +12,12 @@
     .explore__btn{
        border: none;
        padding: 15px 30px;
-       background: linear-gradient(135deg,#FF79DA, #9356DC);
+       background: linear-gradient(
+         135deg
+         , #FF79DA, #9356DC);
        border-radius: 40px;
-       color:$secondary-color; }
+       color: $secondary-color;
+       }
     }
 
 

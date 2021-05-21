@@ -16,9 +16,11 @@ header {
     align-items: center;
     height: 3.5rem;
      .logo {padding: 1.2rem;
-        align-self:center;
-         margin-left: 15%;}
-    .goback {font-size: larger;}
+        margin: auto;
+         img { width: 150px;}
+         }
+    .goback {font-size: larger; color:black;}
+    a:visited{color: black;}
       
 }
 .image_logo
@@ -33,7 +35,7 @@ header {
 
 .main{
     background-color: $primary-color;
-    border-radius: 20px;
+    border-radius: 40px;
     margin-top: -30px;
     overflow: overlay;
 .main__header { display: flex; flex-direction: row;
@@ -47,7 +49,10 @@ header {
 
 
     .main__name {margin-left:20px;
-    font-variant-caps: all-petite-caps;}
+    font-variant-caps: all-petite-caps;
+    border-bottom: $tertiary-elem-color 2px solid;
+    width: 25px;
+}
 
     .main__card{
         display: flex;
@@ -65,7 +70,6 @@ header {
                 margin-top: 10px;
                 margin-bottom: 10px;
                 color: black;
-                font-size: smaller;
                    
                    h3 {margin:0;
                     padding-bottom: 5px; flex-wrap: nowrap; font-size: smaller;}
@@ -75,6 +79,7 @@ header {
                 display: flex;
                 align-items: flex-end;
                 font-size: smaller;
+                color: black;
             }
         
               }
@@ -93,8 +98,41 @@ header {
         color:$secondary-color;
         font-size: 16px;
         padding: 15px 70px;
+    .cmmd:hover {cursor: pointer;}
     
      }
 
 }
 
+
+@media(min-width: 768px)
+
+{
+ .containerall {width: 70%; margin: auto;}
+ .main {
+    .menu { display: flex;
+    flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: baseline;
+    .menu__group {display: flex; flex-direction: column; flex-basis: 50%;}
+    .bouton__commande {flex-basis: 100%;}
+}
+    .main__header {justify-content: center; flex-basis: 100%;}
+.like { margin-left: 50px;}
+    .main__name {margin:auto; margin-bottom: 1em;}
+   .main__card{ margin: auto;
+margin-bottom: 1em;
+width: 90%;
+height: auto;
+   .main__card__descr {
+    .main__card__descr__text { flex-basis: 70%;
+        h3 {font-size: 0.8em;}
+        p { font-size: 0.8em}
+    .main__card__descr__price { font-size: 0.8em; padding-bottom: 0.5em;}
+        ;}
+
+   }}}
+  
+ .header {width: 70%;}
+}

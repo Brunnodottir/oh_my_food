@@ -23,12 +23,13 @@
        width: 100%;
        background-color: $primary-color;
        margin-bottom: 20px;
+     
        
            .number {
                display: inline;
                height: 2rem;
                width: 2rem;
-               background-color: #9356DC;
+               background-color: $primary-elem-color;
                text-align: center;
                line-height: 2rem;
                color: $secondary-color;
@@ -44,6 +45,12 @@
        }}
      
 }
+.howtouse {
+    .howtouse__steps {
+        .step:hover {background-color: $primary-elem-color;
+          i:hover {color:red;}}
+
+    }}
 
 
 @media(min-width: 768px)
@@ -53,9 +60,11 @@
     .howtouse__steps{
         width: 50%;
         margin: auto;
+        
 
     }
-    .step {height: 4em;}
+    .step {height: 4em;
+    width: 70%;}
 }
 }
 
@@ -66,9 +75,11 @@
 {
     .howtouse__steps{
         width: 50%;
+        margin:auto;
 
     .step {
         height: 4em;
+        width: 70%;
 
     }
     

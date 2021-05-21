@@ -21,10 +21,12 @@ footer .options {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: white;
 }
 
 footer .options p {
   padding-left: 5px;
+  margin: 0;
 }
 
 footer a:visited {
@@ -81,14 +83,20 @@ header {
 
 header .logo {
   padding: 1.2rem;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-left: 15%;
+  margin: auto;
+}
+
+header .logo img {
+  width: 150px;
 }
 
 header .goback {
   font-size: larger;
+  color: black;
+}
+
+header a:visited {
+  color: black;
 }
 
 .image_logo {
@@ -102,7 +110,7 @@ header .goback {
 
 .main {
   background-color: #f2f2f2;
-  border-radius: 20px;
+  border-radius: 40px;
   margin-top: -30px;
   overflow: overlay;
 }
@@ -135,6 +143,8 @@ header .goback {
 .main .main__name {
   margin-left: 20px;
   font-variant-caps: all-petite-caps;
+  border-bottom: #99E2D0 2px solid;
+  width: 25px;
 }
 
 .main .main__card {
@@ -169,7 +179,6 @@ header .goback {
   margin-top: 10px;
   margin-bottom: 10px;
   color: black;
-  font-size: smaller;
 }
 
 .main .main__card .main__card__descr .main__card__descr__text h3 {
@@ -194,6 +203,7 @@ header .goback {
       -ms-flex-align: end;
           align-items: flex-end;
   font-size: smaller;
+  color: black;
 }
 
 .bouton__commande {
@@ -209,5 +219,84 @@ header .goback {
   color: white;
   font-size: 16px;
   padding: 15px 70px;
+}
+
+.bouton__commande .cmmd .cmmd:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .containerall {
+    width: 70%;
+    margin: auto;
+  }
+  .main .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .main .menu .menu__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .main .menu .bouton__commande {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .main .main__header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .main .like {
+    margin-left: 50px;
+  }
+  .main .main__name {
+    margin: auto;
+    margin-bottom: 1em;
+  }
+  .main .main__card {
+    margin: auto;
+    margin-bottom: 1em;
+    width: 90%;
+    height: auto;
+  }
+  .main .main__card .main__card__descr .main__card__descr__text {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+  .main .main__card .main__card__descr .main__card__descr__text h3 {
+    font-size: 0.8em;
+  }
+  .main .main__card .main__card__descr .main__card__descr__text p {
+    font-size: 0.8em;
+  }
+  .main .main__card .main__card__descr .main__card__descr__text .main__card__descr__price {
+    font-size: 0.8em;
+    padding-bottom: 0.5em;
+  }
+  .header {
+    width: 70%;
+  }
 }
 /*# sourceMappingURL=pages.css.map */

@@ -64,6 +64,14 @@
   margin-right: 1.5rem;
 }
 
+.howtouse .howtouse__steps .step:hover {
+  background-color: #9356DC;
+}
+
+.howtouse .howtouse__steps .step:hover i:hover {
+  color: red;
+}
+
 @media (min-width: 768px) {
   .howtouse .howtouse__steps {
     width: 50%;
@@ -71,15 +79,18 @@
   }
   .howtouse .step {
     height: 4em;
+    width: 70%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .howtouse .howtouse__steps {
     width: 50%;
+    margin: auto;
   }
   .howtouse .howtouse__steps .step {
     height: 4em;
+    width: 70%;
   }
 }
 
@@ -164,10 +175,12 @@ footer .options {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: white;
 }
 
 footer .options p {
   padding-left: 5px;
+  margin: 0;
 }
 
 footer a:visited {
@@ -210,6 +223,9 @@ footer .minilogo {
   margin: 1.3rem;
   -webkit-box-shadow: 0 4px 8px 0 black;
           box-shadow: 0 4px 8px 0 black;
+}
+
+.restaurants .restaurant__card .new {
   position: relative;
 }
 
@@ -257,6 +273,10 @@ footer .minilogo {
   margin-top: 20px;
 }
 
+.restaurants .restaurant__card .restaurant__card-container .like .like:hover {
+  background: linear-gradient(135deg #9356DC, #FF79DA);
+}
+
 body {
   font-family: 'roboto', 'sans serif';
 }
@@ -291,6 +311,20 @@ body a {
   .restaurants .restaurant__card {
     width: 30%;
   }
+  .restaurants .new {
+    position: relative;
+  }
+  .restaurants .boutonnew {
+    background-color: #99E2D0;
+    border: 2px solid #99E2D0;
+    position: absolute;
+    right: 3em;
+    bottom: 2em;
+    z-index: 200;
+    margin-right: 18em;
+    margin-top: 20px;
+    font-family: 'roboto';
+  }
   .explore {
     height: 1em;
   }
@@ -318,9 +352,23 @@ body a {
   .restaurants h2 {
     width: 100%;
   }
+  .restaurants h2 .boutonnew {
+    background-color: #99E2D0;
+    border: 2px solid #99E2D0;
+    position: absolute;
+    right: 3em;
+    bottom: 3em;
+    z-index: 200;
+    margin-right: 18em;
+    margin-top: 20px;
+    font-family: 'roboto';
+  }
   .restaurants .restaurant__card {
     width: 65%;
     height: 15em;
+  }
+  .restaurants .restaurant__card .new {
+    position: relative;
   }
   .explore {
     height: 0.2em;
