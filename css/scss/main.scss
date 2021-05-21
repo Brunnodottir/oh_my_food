@@ -35,26 +35,17 @@ body
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    
        h2{width: 100%;
     }
     .restaurant__card {width: 30%; }
-       .new {position:relative;}
+    
 
-    .boutonnew { background-color: #99E2D0;
-        border:2px solid #99E2D0;
-        position: absolute;
-        right: 3em;
-        bottom:2em;
-        z-index: 200;
-        margin-right: 18em;
-        margin-top: 20px;
-        font-family: 'roboto';
-        
+    
     } 
 }
 
-.explore {height: 1em;}
-}
+
 
 
 
@@ -70,23 +61,11 @@ body
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-       h2{width: 100%;
+       h2{width: 100%;}
 
-        .boutonnew { background-color: #99E2D0;
-            border:2px solid #99E2D0;
-            position: absolute;
-            right: 3em;
-            bottom:3em;
-            z-index: 200;
-            margin-right: 18em;
-            margin-top: 20px;
-            font-family: 'roboto';
-            
-        } 
-    }
     .restaurant__card {width: 65%;
         height: 15em;
-        .new {position:relative;}
+       
     }
 }
 
