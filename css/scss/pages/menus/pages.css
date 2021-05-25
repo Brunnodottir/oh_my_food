@@ -1,0 +1,325 @@
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  background-color: #535353;
+  padding-bottom: 20px;
+}
+
+footer .options {
+  margin-left: 20px;
+  padding-top: 10px;
+  font-family: 'roboto', 'sans-serif';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+footer .options p {
+  padding-left: 5px;
+  margin: 0;
+}
+
+footer a:visited {
+  color: white;
+}
+
+footer .minilogo {
+  font-family: 'Shrikhand', 'cursive';
+  margin-left: 20px;
+  padding-top: 10px;
+}
+
+header .logo {
+  padding: 1.2rem;
+}
+
+header .logo img {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.loc {
+  background-color: #d3d3d3;
+  text-align: center;
+  padding: 1.1rem;
+}
+
+.loc input {
+  background-color: #d3d3d3;
+  border: none;
+  color: black;
+}
+
+body {
+  font-family: 'roboto', sans-serif;
+  width: 100%;
+}
+
+body a {
+  text-decoration: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3.5rem;
+}
+
+header .logo {
+  padding: 1.2rem;
+  margin: auto;
+}
+
+header .logo img {
+  width: 150px;
+}
+
+header .goback {
+  font-size: larger;
+  color: black;
+}
+
+header a:visited {
+  color: black;
+}
+
+.image_logo {
+  width: 100%;
+  height: 15rem;
+  margin-top: 0;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main {
+  background-color: #f2f2f2;
+  border-radius: 40px;
+  margin-top: -30px;
+  overflow: overlay;
+}
+
+.main .main__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .main__header .main__title {
+  font-family: 'Shrikhand',cursive;
+  margin-left: 20px;
+}
+
+.main .main__header .like {
+  margin-right: 20px;
+}
+
+.main .main__header .like i {
+  cursor: pointer;
+}
+
+.main .main__header .like .far:hover {
+  background: linear-gradient(135deg, #FF79DA, #9356DC);
+}
+
+.main .main__name {
+  margin-left: 20px;
+  font-variant-caps: all-petite-caps;
+  border-bottom: #99E2D0 2px solid;
+  width: 25px;
+}
+
+.main .main__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 20px;
+  margin-bottom: 1.3rem;
+  background-color: white;
+  margin: 1em 1.3em 1em 1.3em;
+  -webkit-box-shadow: 0 4px 8px 0 black;
+          box-shadow: 0 4px 8px 0 black;
+  height: 70px;
+}
+
+.main .main__card .main__card__descr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main .main__card .main__card__descr .main__card__descr__text {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: black;
+}
+
+.main .main__card .main__card__descr .main__card__descr__text h3 {
+  margin: 0;
+  padding-bottom: 5px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-size: smaller;
+}
+
+.main .main__card .main__card__descr .main__card__descr__text p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.main .main__card .main__card__descr .main__card__descr__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-weight: 700;
+  color: black;
+  font-size: 0.8em;
+}
+
+.bouton__commande {
+  text-align: center;
+  padding: 30px;
+}
+
+.bouton__commande .cmmd {
+  border: none;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #FF79DA, #9356DC);
+  border-radius: 40px;
+  color: white;
+  font-size: 16px;
+  padding: 15px 70px;
+}
+
+.bouton__commande .cmmd .cmmd:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .containerall {
+    width: 80%;
+    margin: auto;
+  }
+  .main .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .main .menu .menu__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    margin: 10px;
+  }
+  .main .menu .bouton__commande {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .main .main__header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .main .like {
+    margin-left: 50px;
+  }
+  .main .main__name {
+    margin: auto;
+    margin-bottom: 1em;
+  }
+  .main .main__card {
+    margin: auto;
+    margin-bottom: 1em;
+    width: 90%;
+    height: auto;
+  }
+  .main .main__card .main__card__descr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 15Px;
+  }
+  .main .main__card .main__card__descr .main__card__descr__text {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+  .main .main__card .main__card__descr .main__card__descr__text h3 {
+    font-size: 0.8em;
+  }
+  .main .main__card .main__card__descr .main__card__descr__text p {
+    font-size: 0.8em;
+  }
+  .main .main__card .main__card__descr .main__card__descr__text .main__card__descr__price {
+    font-size: 0.8em;
+    padding-bottom: 0.5em;
+  }
+  .header {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=pages.css.map */

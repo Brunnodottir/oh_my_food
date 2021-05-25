@@ -1,5 +1,5 @@
 
-@import "../variables";
+@import "../composants/variables";
 
 
 
@@ -28,6 +28,7 @@
         background-color: $secondary-color;
         margin: 1.3rem;
         box-shadow: 0 4px 8px 0 rgb(0, 0, 0 / 5%);
+        position: relative;
         
     
 
@@ -37,7 +38,7 @@
            width: 100%;
            height: 10rem;
            border-radius: 20px 20px 0 0;
-           position: relative;
+           
          }
            
         .restaurant__card-container{
@@ -92,7 +93,7 @@ h2{
   z-index: 200;
   font-family: 'roboto';
   display: flex;
-  right: 22em;
+  
   
 } 
 }

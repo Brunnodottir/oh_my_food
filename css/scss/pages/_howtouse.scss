@@ -1,5 +1,5 @@
 
-@import "../variables";
+@import "../composants/variables";
 
 .howtouse {
     margin-top: 2rem;
@@ -29,9 +29,10 @@
            transform: scale(1.1);
            color: $primary-elem-color;
            background-color: $secondary-elem-color;
-           filter: opacity(40%);
            filter: drop-shadow(0 0 0 1rem black);
-           ;
+           i.fas {
+               color:$primary-elem-color;
+           }
        }
      
        
@@ -51,7 +52,7 @@
            .fas {color: grey;
            margin-right: 1.5rem;
            }
-         .fas:hover { color:$primary-elem-color;}
+        
 }
 
        }}
