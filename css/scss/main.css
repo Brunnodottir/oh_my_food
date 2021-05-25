@@ -231,6 +231,7 @@ footer .minilogo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  right: 2em;
 }
 
 .restaurants .restaurant__card {
@@ -301,6 +302,30 @@ footer .minilogo {
 
 .restaurants .restaurant__card .restaurant__card-container .like .far:hover {
   background: linear-gradient(135deg, #FF79DA, #9356DC);
+}
+
+@media (min-width: 768px) {
+  .restaurants .restaurant__card-container {
+    margin-top: 10px;
+  }
+  .restaurants h2 {
+    padding-top: 2rem;
+    margin-left: 20px;
+  }
+  .restaurants .boutonnew {
+    background-color: #99E2D0;
+    border: 2px solid #99E2D0;
+    position: absolute;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 200;
+    font-family: 'roboto';
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    right: 22em;
+  }
 }
 
 body {
