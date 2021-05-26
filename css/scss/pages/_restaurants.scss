@@ -29,7 +29,7 @@
         margin: 1.3rem;
         box-shadow: 0 4px 8px 0 rgb(0, 0, 0 / 5%);
         position: relative;
-        &:hover
+      
         
     
 
@@ -63,9 +63,27 @@
             
              i { cursor: pointer;
             font-size: larger;}
-            .far:hover {
-            background: linear-gradient(135deg,#FF79DA, #9356DC)}
-               
+
+
+             .fas { -webkit-text-stroke:1px black;
+              background-clip: text;
+              -webkit-background-clip: text; 
+              color: transparent;
+              background-image: linear-gradient(to top,#9356DC 0%, #FF79DA 100%);
+              background-position-y: 100px;
+              background-repeat: no-repeat;
+              transition: 800ms ease all;
+               &:hover {
+                background-position-y: 0;
+                -webkit-text-stroke-color: transparent;
+
+               &::before {
+                -webkit-text-stroke-color: linear-gradient(to top,#9356DC 0%, #FF79DA 100%);
+                -webkit-text-fill-color: transparent;
+              }
+
+              }
+                    }
            }
          
        }
