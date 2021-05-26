@@ -45,10 +45,10 @@
   margin-bottom: 20px;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform 400ms;
-  transition: -webkit-transform 400ms;
-  transition: transform 400ms;
-  transition: transform 400ms, -webkit-transform 400ms;
+  -webkit-transition: -webkit-transform 800ms;
+  transition: -webkit-transform 800ms;
+  transition: transform 800ms;
+  transition: transform 800ms, -webkit-transform 800ms;
 }
 
 .howtouse .howtouse__steps ul .step:hover {
@@ -140,7 +140,7 @@
 }
 
 .explore .explore__btn:active, .explore .explore__btnfocus {
-  outline: 0;
+  outline: 2px;
 }
 
 .explore .explore__btn:hover {
@@ -148,6 +148,10 @@
   cursor: pointer;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-transition: -webkit-transform 800ms;
+  transition: -webkit-transform 800ms;
+  transition: transform 800ms;
+  transition: transform 800ms, -webkit-transform 800ms;
 }
 
 header .logo {
@@ -251,7 +255,7 @@ footer .minilogo {
   position: relative;
 }
 
-.restaurants .restaurant__card .restaurant__card-image {
+.restaurants .restaurant__card:hover .restaurant__card-image {
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
