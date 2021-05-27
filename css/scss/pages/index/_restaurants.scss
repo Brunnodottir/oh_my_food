@@ -60,6 +60,21 @@
            .like{
                margin-right: 20px;
                margin-top: 20px;
+
+               input#restaurant1 {display:none;}
+
+               .fancy-checkbox input[type="checkbox"],
+               .custom-checkbox .checked {
+                 display: none;
+               }
+               
+               .custom-checkbox input[type="checkbox"]:checked~.checked {
+                display: inline-block;
+                background-image: linear-gradient(to top,#9356DC 0%, #FF79DA 100%);
+              
+              }
+              .custom-checkbox input[type="checkbox"]:checked~.unchecked {
+                display: none;}
             
              i { cursor: pointer;
             font-size: larger;}

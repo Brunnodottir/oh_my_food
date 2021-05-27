@@ -362,6 +362,25 @@ footer .minilogo {
   margin-top: 20px;
 }
 
+.restaurants .restaurant__card .restaurant__card-container .like input#restaurant1 {
+  display: none;
+}
+
+.restaurants .restaurant__card .restaurant__card-container .like .fancy-checkbox input[type="checkbox"],
+.restaurants .restaurant__card .restaurant__card-container .like .custom-checkbox .checked {
+  display: none;
+}
+
+.restaurants .restaurant__card .restaurant__card-container .like .custom-checkbox input[type="checkbox"]:checked ~ .checked {
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
+}
+
+.restaurants .restaurant__card .restaurant__card-container .like .custom-checkbox input[type="checkbox"]:checked ~ .unchecked {
+  display: none;
+}
+
 .restaurants .restaurant__card .restaurant__card-container .like i {
   cursor: pointer;
   font-size: larger;
