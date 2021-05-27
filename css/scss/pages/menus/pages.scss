@@ -1,6 +1,13 @@
-@import "../footer";
-@import "../header";
-@import "../../composants/variables";
+
+@import '../../utils/variables';
+@import '../../composants/buttons';
+@import '../../composants/loader';
+@import '../../layout/footer';
+@import '../../layout/header';
+@import '../../base/general';
+@import '../../base/animations';
+
+
 
 
 
@@ -8,10 +15,11 @@ body {
     font-family: 'roboto', sans-serif;
       a {text-decoration: none;}
       width: 100%;
+      
 }
 
 
-header {
+header { 
     display: flex;
     align-items: center;
     height: 3.5rem;
@@ -34,27 +42,28 @@ header {
 }
 
 .main{
-    background-color: $primary-color;
+    background-color: $secondary-color;
     border-radius: 40px;
     margin-top: -30px;
     overflow: overlay;
-.main__header { display: flex; flex-direction: row;
+
+    &__header { display: flex; flex-direction: row;
     justify-content: space-between; align-items: center;
-     .main__title {
-         font-family: 'Shrikhand',cursive;
+
+
+   
+    
+    &__title {font-family: 'Shrikhand',cursive;
          margin-left: 20px;}
-        
-        
- .like {margin-right: 20px;
-        i { cursor: pointer;}
-    .far:hover {
-    background: linear-gradient(135deg,#FF79DA, #9356DC)}
+
     
+ 
+            
+
     
-    }}
 
 
-    .main__name {margin-left:20px;
+    &__name {margin-left:20px;
     font-variant-caps: all-petite-caps;
     border-bottom: $tertiary-elem-color 2px solid;
     width: 25px;
@@ -91,43 +100,39 @@ header {
         
               }
     }
-
-}
-
-       
-
-.bouton__commande { text-align: center; padding: 30px;
-    .cmmd {
-        border: none;
-        padding: 15px 30px;
-        background: linear-gradient(135deg,#FF79DA, #9356DC);
-        border-radius: 40px;
-        color:$secondary-color;
-        font-size: 16px;
-        padding: 15px 70px;
-    .cmmd:hover {cursor: pointer;}
     
-     }
+              
+    
+        
+
+
+
 
 }
+
+
 
 
 @media(min-width: 768px)
 
 {
  .containerall {width: 80%; margin: auto;}
- .main {
-    .menu { display: flex;
+
+ 
+.menu { display: flex;
     flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-around;
 align-items: baseline;
     .menu__group {display: flex; flex-direction: column; flex-basis: 45%;
 margin: 10px;
-}
-    .bouton__commande {flex-basis: 100%;}
-}
-    .main__header {justify-content: center; flex-basis: 100%;}
+}}
+
+
+
+.bouton__commande {flex-basis: 100%;}
+
+.main__header {justify-content: center; flex-basis: 100%;}
 .like { margin-left: 50px;}
     .main__name {margin:auto; margin-bottom: 1em;}
    .main__card{ margin: auto;
@@ -148,6 +153,6 @@ height: auto;
         ;}
 
    }}}
+
   
- .header {width: 70%;}
-}
+ .header {width: 70%;}}

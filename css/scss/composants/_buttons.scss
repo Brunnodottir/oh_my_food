@@ -1,0 +1,16 @@
+/*boutons*/
+
+.bouton__commande { text-align: center; padding: 30px;
+    .cmmd {
+        border: none;
+        padding: 15px 30px;
+        background: linear-gradient(135deg,#FF79DA, #9356DC);
+        border-radius: 40px;
+        color:$secondary-color;
+        font-size: 16px;
+        padding: 15px 70px;
+         &:hover {cursor: pointer;} } 
+        
+        
+        }
+    

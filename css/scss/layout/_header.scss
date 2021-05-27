@@ -1,6 +1,7 @@
- @import '../composants/variables';
+@import '../utils/variables';
+@import '../utils/mixins';
  
-header{
+header{ 
     .logo{
         padding: 1.2rem;
         img {
@@ -8,6 +9,7 @@ header{
             display: block;
             margin-left: auto;
             margin-right: auto;
+            
         }
     }
 }

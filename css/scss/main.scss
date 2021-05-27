@@ -1,73 +1,16 @@
 
-  @import "./pages/howtouse";
-  @import "./pages/explore";
-  @import "./pages/header";
-  @import "./pages/footer";
-  @import "./pages/restaurants";
-  @import "./composants/variables";
-  
-
-body
-{
-    font-family: 'roboto', 'sans serif';
-      a
-      {text-decoration: none;}
-}
-
-     
-
-  .main {
-      background-color: $primary-color;
-      padding-bottom: 20px;
-    
-  }
-
-
-  
+ @import './utils/variables';
+ @import './utils/mixins';
+ @import './utils/placeholders';
+ @import './base/animations';
+ @import './base/general';
+ @import './composants/loader';
+ @import './composants/buttons';
+ @import './layout/header';
+ @import './layout/footer';
+ @import './pages/index/explore';
+ @import './pages/index/howtouse';
+ @import './pages/index/restaurants';
+ @import './pages/menus/pages';
 
        
-
-@media(min-width: 768px)
-
-{
-.restaurants {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-       h2{width: 100%;
-    }
-    .restaurant__card {width: 30%; }
-    
-
-    
-    } 
-}
-
-
-
-
-
-@media screen and (min-width: 1200px)
-
-{
-    body{
-        width: 80%;
-        margin: auto;
-    }
-.restaurants {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-       h2{width: 100%;}
-
-    .restaurant__card {width: 65%;
-        height: 15em;
-       
-    }
-}
-
-.explore { height: 0.2em;}
-}

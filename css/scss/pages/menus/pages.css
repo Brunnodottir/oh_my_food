@@ -1,3 +1,25 @@
+/*boutons*/
+.bouton__commande {
+  text-align: center;
+  padding: 30px;
+}
+
+.bouton__commande .cmmd {
+  border: none;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #FF79DA, #9356DC);
+  border-radius: 40px;
+  color: white;
+  font-size: 16px;
+  padding: 15px 70px;
+}
+
+.bouton__commande .cmmd:hover {
+  cursor: pointer;
+}
+
+/*loader*/
+/*faves*/
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,6 +84,23 @@ header .logo img {
   color: black;
 }
 
+/*general*/
+/*html, titres, police, container etc*/
+body {
+  font-family: 'roboto', 'sans serif';
+}
+
+body a {
+  text-decoration: none;
+}
+
+.main {
+  background-color: #f2f2f2;
+  padding-bottom: 20px;
+}
+
+/*loader*/
+/*pages*/
 body {
   font-family: 'roboto', sans-serif;
   width: 100%;
@@ -109,13 +148,13 @@ header a:visited {
 }
 
 .main {
-  background-color: #f2f2f2;
+  background-color: white;
   border-radius: 40px;
   margin-top: -30px;
   overflow: overlay;
 }
 
-.main .main__header {
+.main__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,31 +170,19 @@ header a:visited {
           align-items: center;
 }
 
-.main .main__header .main__title {
+.main__header__title {
   font-family: 'Shrikhand',cursive;
   margin-left: 20px;
 }
 
-.main .main__header .like {
-  margin-right: 20px;
-}
-
-.main .main__header .like i {
-  cursor: pointer;
-}
-
-.main .main__header .like .far:hover {
-  background: linear-gradient(135deg, #FF79DA, #9356DC);
-}
-
-.main .main__name {
+.main__header__name {
   margin-left: 20px;
   font-variant-caps: all-petite-caps;
   border-bottom: #99E2D0 2px solid;
   width: 25px;
 }
 
-.main .main__card {
+.main__header .main__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,7 +199,7 @@ header a:visited {
   height: 70px;
 }
 
-.main .main__card .main__card__descr {
+.main__header .main__card .main__card__descr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,7 +207,7 @@ header a:visited {
       justify-content: space-around;
 }
 
-.main .main__card .main__card__descr .main__card__descr__text {
+.main__header .main__card .main__card__descr .main__card__descr__text {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
   margin-left: 10px;
@@ -188,7 +215,7 @@ header a:visited {
   color: black;
 }
 
-.main .main__card .main__card__descr .main__card__descr__text h3 {
+.main__header .main__card .main__card__descr .main__card__descr__text h3 {
   margin: 0;
   padding-bottom: 5px;
   -ms-flex-wrap: nowrap;
@@ -196,12 +223,12 @@ header a:visited {
   font-size: smaller;
 }
 
-.main .main__card .main__card__descr .main__card__descr__text p {
+.main__header .main__card .main__card__descr .main__card__descr__text p {
   margin: 0;
   font-size: 0.9em;
 }
 
-.main .main__card .main__card__descr .main__card__descr__price {
+.main__header .main__card .main__card__descr .main__card__descr__price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,27 +240,8 @@ header a:visited {
   font-size: 0.8em;
 }
 
-.bouton__commande {
-  text-align: center;
-  padding: 30px;
-}
-
-.bouton__commande .cmmd {
-  border: none;
-  padding: 15px 30px;
-  background: linear-gradient(135deg, #FF79DA, #9356DC);
-  border-radius: 40px;
-  color: white;
-  font-size: 16px;
-  padding: 15px 70px;
-}
-
-.bouton__commande .cmmd .cmmd:hover {
-  cursor: pointer;
-}
-
 @media (min-width: 768px) {
-  .containerall {
+  .main .containerall {
     width: 80%;
     margin: auto;
   }
@@ -265,7 +273,7 @@ header a:visited {
         flex-basis: 45%;
     margin: 10px;
   }
-  .main .menu .bouton__commande {
+  .main .bouton__commande {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -318,8 +326,9 @@ header a:visited {
     font-size: 0.8em;
     padding-bottom: 0.5em;
   }
-  .header {
-    width: 70%;
-  }
+}
+
+.main .header {
+  width: 70%;
 }
 /*# sourceMappingURL=pages.css.map */

@@ -1,8 +1,8 @@
+@import '../../utils/variables';
+@import '../../composants/buttons';
 
-@import "../composants/variables";
 
-
-
+.restaurants_main {background-color: $primary-color;}
 
 .restaurants {
     h2{ 
@@ -117,4 +117,52 @@ h2{
 } 
 }
 
+}
+
+
+
+
+@media(min-width: 768px)
+
+{
+.restaurants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+       h2{width: 100%;
+    }
+    .restaurant__card {width: 30%; }
+    
+
+    
+    } 
+}
+
+
+
+
+
+@media screen and (min-width: 1200px)
+
+{
+    body{
+        width: 80%;
+        margin: auto;
+    }
+.restaurants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+       h2{width: 100%;}
+
+    .restaurant__card {width: 65%;
+        height: 15em;
+       
+    }
+}
+
+.explore { height: 0.2em;}
 }
