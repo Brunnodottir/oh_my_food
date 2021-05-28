@@ -19,7 +19,7 @@ body {
 }
 
 
-header { 
+header { background-color: red;
     display: flex;
     align-items: center;
     height: 3.5rem;
@@ -51,7 +51,7 @@ header {
     justify-content: space-between; align-items: center;
 
 
-   
+     .like {background-color: red;}
     
     &__title {font-family: 'Shrikhand',cursive;
          margin-left: 20px;}

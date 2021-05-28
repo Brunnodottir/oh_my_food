@@ -1,0 +1,827 @@
+/*loader*/
+/*pages*/
+/*general*/
+/*html, titres, police, container etc*/
+body {
+    font-family: 'roboto', 'sans serif';
+  }
+  
+  body a {
+    text-decoration: none;
+  }
+  
+  .main {
+    background-color: #f2f2f2;
+    padding-bottom: 20px;
+  }
+  
+  /*loader*/
+  /*faves*/
+  /*boutons*/
+  .bouton__commande {
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .bouton__commande .cmmd {
+    border: none;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #FF79DA, #9356DC);
+    border-radius: 40px;
+    color: white;
+    font-size: 16px;
+    padding: 15px 70px;
+  }
+  
+  .bouton__commande .cmmd:hover {
+    cursor: pointer;
+  }
+  
+  header .logo {
+    padding: 1.2rem;
+  }
+  
+  header .logo img {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .loc {
+    background-color: #d3d3d3;
+    text-align: center;
+    padding: 1.1rem;
+  }
+  
+  .loc input {
+    background-color: #d3d3d3;
+    border: none;
+    color: black;
+  }
+  
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: white;
+    background-color: #535353;
+    padding-bottom: 20px;
+  }
+  
+  footer .options {
+    margin-left: 20px;
+    padding-top: 10px;
+    font-family: 'roboto', 'sans-serif';
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+  }
+  
+  footer .options p {
+    padding-left: 5px;
+    margin: 0;
+  }
+  
+  footer a:visited {
+    color: white;
+  }
+  
+  footer .minilogo {
+    font-family: 'Shrikhand', 'cursive';
+    margin-left: 20px;
+    padding-top: 10px;
+  }
+  
+  .explore {
+    background-color: #f2f2f2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 10% 15%;
+  }
+  
+  .explore h2 {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  .explore p {
+    text-align: center;
+    color: gray;
+  }
+  
+  .explore .explore__btn {
+    border: none;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #FF79DA, #9356DC);
+    border-radius: 40px;
+    color: white;
+  }
+  
+  .explore .explore__btn:active, .explore .explore__btnfocus {
+    outline: 2px;
+  }
+  
+  .explore .explore__btn:hover {
+    background: linear-gradient(135deg, #9356DC, #FF79DA);
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: -webkit-transform 800ms;
+    transition: -webkit-transform 800ms;
+    transition: transform 800ms;
+    transition: transform 800ms, -webkit-transform 800ms;
+  }
+  
+  .howtouse {
+    margin-top: 2rem;
+  }
+  
+  .howtouse h2 {
+    margin-left: 20px;
+  }
+  
+  .howtouse .howtouse__steps {
+    margin-right: 10%;
+  }
+  
+  .howtouse .howtouse__steps ul {
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 2rem;
+  }
+  
+  .howtouse .howtouse__steps ul .step {
+    -webkit-box-shadow: 0 0 0.8rem black;
+            box-shadow: 0 0 0.8rem black;
+    border-radius: 50px;
+    padding: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform 800ms;
+    transition: -webkit-transform 800ms;
+    transition: transform 800ms;
+    transition: transform 800ms, -webkit-transform 800ms;
+  }
+  
+  .howtouse .howtouse__steps ul .step:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    color: #9356DC;
+    background-color: #FF79DA;
+    -webkit-filter: drop-shadow(0 0 0 1rem black);
+            filter: drop-shadow(0 0 0 1rem black);
+  }
+  
+  .howtouse .howtouse__steps ul .step:hover i.fas {
+    color: #9356DC;
+  }
+  
+  .howtouse .howtouse__steps ul .step .number {
+    display: inline;
+    height: 2rem;
+    width: 2rem;
+    background-color: #9356DC;
+    text-align: center;
+    line-height: 2rem;
+    color: white;
+    font-weight: 500;
+    border-radius: 50%;
+    margin-left: -1rem;
+    margin-right: 2rem;
+  }
+  
+  .howtouse .howtouse__steps ul .step .fas {
+    color: grey;
+    margin-right: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .howtouse .howtouse__steps {
+      margin: auto;
+    }
+    .howtouse .step {
+      height: 4em;
+      width: 70%;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .howtouse .howtouse__steps {
+      width: 50%;
+      margin: auto;
+    }
+    .howtouse .howtouse__steps .step {
+      height: 4em;
+      width: 70%;
+    }
+  }
+  
+  /*boutons*/
+  .bouton__commande {
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .bouton__commande .cmmd {
+    border: none;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #FF79DA, #9356DC);
+    border-radius: 40px;
+    color: white;
+    font-size: 16px;
+    padding: 15px 70px;
+  }
+  
+  .bouton__commande .cmmd:hover {
+    cursor: pointer;
+  }
+  
+  .restaurants_main {
+    background-color: #f2f2f2;
+  }
+  
+  .restaurants h2 {
+    padding-top: 2rem;
+    margin-left: 20px;
+  }
+  
+  .restaurants .boutonnew {
+    background-color: #99E2D0;
+    border: 2px solid #99E2D0;
+    position: absolute;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 200;
+    font-family: 'roboto';
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    right: 2em;
+  }
+  
+  .restaurants .restaurant__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 20px;
+    margin-bottom: 1.3rem;
+    background-color: white;
+    margin: 1.3rem;
+    -webkit-box-shadow: 0 4px 8px 0 black;
+            box-shadow: 0 4px 8px 0 black;
+    position: relative;
+  }
+  
+  .restaurants .restaurant__card .restaurant__card-image {
+    overflow: hidden;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 10rem;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .restaurants .restaurant__card .restaurant__card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  .restaurants .restaurant__card .restaurant__card-container .text {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    font-size: smaller;
+  }
+  
+  .restaurants .restaurant__card .restaurant__card-container .text h3 {
+    margin: 0;
+    padding-bottom: 5px;
+  }
+  
+  .restaurants .restaurant__card .restaurant__card-container .text p {
+    margin: 0;
+  }
+  
+  .restaurants .restaurant__card .restaurant__card-container .like {
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  
+  .restaurants .restaurant__card .restaurant__card-container .like input#restaurant1 {
+    display: none;
+  }
+  
+  .restaurants .restaurant__card .restaurant__card-container .like .fancy-checkbox input[type="checkbox"],
+  .restaurants .restaurant__card .restaurant__card-container .like .custom-checkbox .checked {
+    display: none;
+  }
+  
+  .restaurants .restaurant__card .restaurant__card-container .like .custom-checkbox input[type="checkbox"]:checked ~ .checked {
+    display: inline-block;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #9356dc), to(#ff79da));
+    background: linear-gradient(to bottom, #9356dc 10%, #ff79da);
+  }
+  
+  .restaurants .restaurant__card .restaurant__card-container .like .custom-checkbox input[type="checkbox"]:checked ~ .unchecked {
+    display: none;
+  }
+  
+  .restaurants .restaurant__card .restaurant__card-container .like i {
+    cursor: pointer;
+    font-size: larger;
+  }
+  
+  .restaurants .restaurant__card .restaurant__card-container .like .fas {
+    -webkit-text-stroke: 1px black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+    background-image: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
+    background-position-y: 100px;
+    background-repeat: no-repeat;
+    -webkit-transition: 800ms ease all;
+    transition: 800ms ease all;
+  }
+  
+  .restaurants .restaurant__card .restaurant__card-container .like .fas:hover {
+    background-position-y: 0;
+    -webkit-text-stroke-color: transparent;
+  }
+  
+  .restaurants .restaurant__card .restaurant__card-container .like .fas:hover::before {
+    -webkit-text-stroke-color: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
+    -webkit-text-fill-color: transparent;
+  }
+  
+  @media (min-width: 768px) {
+    .restaurants .restaurant__card-container {
+      margin-top: 10px;
+    }
+    .restaurants h2 {
+      padding-top: 2rem;
+      margin-left: 20px;
+    }
+    .restaurants .boutonnew {
+      background-color: #99E2D0;
+      border: 2px solid #99E2D0;
+      position: absolute;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      z-index: 200;
+      font-family: 'roboto';
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .restaurants {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+    .restaurants h2 {
+      width: 100%;
+    }
+    .restaurants .restaurant__card {
+      width: 30%;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    body {
+      width: 80%;
+      margin: auto;
+    }
+    .restaurants {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+    .restaurants h2 {
+      width: 100%;
+    }
+    .restaurants .restaurant__card {
+      width: 65%;
+      height: 15em;
+    }
+    .explore {
+      height: 0.2em;
+    }
+  }
+  
+  /*boutons*/
+  .bouton__commande {
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .bouton__commande .cmmd {
+    border: none;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #FF79DA, #9356DC);
+    border-radius: 40px;
+    color: white;
+    font-size: 16px;
+    padding: 15px 70px;
+  }
+  
+  .bouton__commande .cmmd:hover {
+    cursor: pointer;
+  }
+  
+  /*loader*/
+  /*faves*/
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: white;
+    background-color: #535353;
+    padding-bottom: 20px;
+  }
+  
+  footer .options {
+    margin-left: 20px;
+    padding-top: 10px;
+    font-family: 'roboto', 'sans-serif';
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+  }
+  
+  footer .options p {
+    padding-left: 5px;
+    margin: 0;
+  }
+  
+  footer a:visited {
+    color: white;
+  }
+  
+  footer .minilogo {
+    font-family: 'Shrikhand', 'cursive';
+    margin-left: 20px;
+    padding-top: 10px;
+  }
+  
+  header .logo {
+    padding: 1.2rem;
+  }
+  
+  header .logo img {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .loc {
+    background-color: #d3d3d3;
+    text-align: center;
+    padding: 1.1rem;
+  }
+  
+  .loc input {
+    background-color: #d3d3d3;
+    border: none;
+    color: black;
+  }
+  
+  /*general*/
+  /*html, titres, police, container etc*/
+  body {
+    font-family: 'roboto', 'sans serif';
+  }
+  
+  body a {
+    text-decoration: none;
+  }
+  
+  .main {
+    background-color: #f2f2f2;
+    padding-bottom: 20px;
+  }
+  
+  /*loader*/
+  /*pages*/
+  body {
+    font-family: 'roboto', sans-serif;
+    width: 100%;
+  }
+  
+  body a {
+    text-decoration: none;
+  }
+  
+  header {
+    background-color: red;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 3.5rem;
+  }
+  
+  header .logo {
+    padding: 1.2rem;
+    margin: auto;
+  }
+  
+  header .logo img {
+    width: 150px;
+  }
+  
+  header .goback {
+    font-size: larger;
+    color: black;
+  }
+  
+  header a:visited {
+    color: black;
+  }
+  
+  .image_logo {
+    width: 100%;
+    height: 15rem;
+    margin-top: 0;
+    overflow: hidden;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  .main {
+    background-color: white;
+    border-radius: 40px;
+    margin-top: -30px;
+    overflow: overlay;
+  }
+  
+  .main__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .main__header .like {
+    background-color: red;
+  }
+  
+  .main__header__title {
+    font-family: 'Shrikhand',cursive;
+    margin-left: 20px;
+  }
+  
+  .main__header__name {
+    margin-left: 20px;
+    font-variant-caps: all-petite-caps;
+    border-bottom: #99E2D0 2px solid;
+    width: 25px;
+  }
+  
+  .main__header .main__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 20px;
+    margin-bottom: 1.3rem;
+    background-color: white;
+    margin: 1em 1.3em 1em 1.3em;
+    -webkit-box-shadow: 0 4px 8px 0 black;
+            box-shadow: 0 4px 8px 0 black;
+    height: 70px;
+  }
+  
+  .main__header .main__card .main__card__descr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  
+  .main__header .main__card .main__card__descr .main__card__descr__text {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: black;
+  }
+  
+  .main__header .main__card .main__card__descr .main__card__descr__text h3 {
+    margin: 0;
+    padding-bottom: 5px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    font-size: smaller;
+  }
+  
+  .main__header .main__card .main__card__descr .main__card__descr__text p {
+    margin: 0;
+    font-size: 0.9em;
+  }
+  
+  .main__header .main__card .main__card__descr .main__card__descr__price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    font-weight: 700;
+    color: black;
+    font-size: 0.8em;
+  }
+  
+  @media (min-width: 768px) {
+    .main .containerall {
+      width: 80%;
+      margin: auto;
+    }
+    .main .menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -webkit-box-align: baseline;
+          -ms-flex-align: baseline;
+              align-items: baseline;
+    }
+    .main .menu .menu__group {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -ms-flex-preferred-size: 45%;
+          flex-basis: 45%;
+      margin: 10px;
+    }
+    .main .bouton__commande {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+    }
+    .main .main__header {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+    }
+    .main .like {
+      margin-left: 50px;
+    }
+    .main .main__name {
+      margin: auto;
+      margin-bottom: 1em;
+    }
+    .main .main__card {
+      margin: auto;
+      margin-bottom: 1em;
+      width: 90%;
+      height: auto;
+    }
+    .main .main__card .main__card__descr {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 15Px;
+    }
+    .main .main__card .main__card__descr .main__card__descr__text {
+      -ms-flex-preferred-size: 70%;
+          flex-basis: 70%;
+    }
+    .main .main__card .main__card__descr .main__card__descr__text h3 {
+      font-size: 0.8em;
+    }
+    .main .main__card .main__card__descr .main__card__descr__text p {
+      font-size: 0.8em;
+    }
+    .main .main__card .main__card__descr .main__card__descr__text .main__card__descr__price {
+      font-size: 0.8em;
+      padding-bottom: 0.5em;
+    }
+  }
+  
+  .main .header {
+    width: 70%;
+  }
+  /*# sourceMappingURL=main.css.map */

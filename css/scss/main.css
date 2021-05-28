@@ -373,8 +373,8 @@ footer .minilogo {
 
 .restaurants .restaurant__card .restaurant__card-container .like .custom-checkbox input[type="checkbox"]:checked ~ .checked {
   display: inline-block;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
-  background-image: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #9356dc), to(#ff79da));
+  background: linear-gradient(to bottom, #9356dc 10%, #ff79da);
 }
 
 .restaurants .restaurant__card .restaurant__card-container .like .custom-checkbox input[type="checkbox"]:checked ~ .unchecked {
@@ -599,6 +599,7 @@ body a {
 }
 
 header {
+  background-color: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -656,6 +657,10 @@ header a:visited {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.main__header .like {
+  background-color: red;
 }
 
 .main__header__title {
