@@ -27,7 +27,7 @@
         margin-bottom: 1.3rem;
         background-color: $secondary-color;
         margin: 1.3rem;
-        box-shadow: 0 4px 8px 0 rgb(0, 0, 0 / 5%);
+        box-shadow: 0 4px 8px 0 rgb(0, 0, 0 );
         position: relative;
       
         
@@ -71,6 +71,7 @@
                .custom-checkbox input[type="checkbox"]:checked~.checked {
                 display: inline-block;
                 background: linear-gradient(to bottom, #9356dc 10%, #ff79da);
+                color: transparent;
               
               }
               .custom-checkbox input[type="checkbox"]:checked~.unchecked {
