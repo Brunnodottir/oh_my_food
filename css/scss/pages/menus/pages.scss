@@ -14,13 +14,13 @@
 body {
     font-family: 'roboto', sans-serif;
       a {text-decoration: none;}
-      width: 80%;
+      
 
       
 }
 
 
-header { background-color: blue;
+header { 
     display: flex;
     align-items: center;
     height: 3.5rem;
@@ -42,73 +42,21 @@ header { background-color: blue;
     
 }
 
-.main{
+.main {
     background-color: $secondary-color;
     border-radius: 40px;
-    margin-top: -30px;
+    transform: translateY(-30px);
     overflow: overlay;
-
-    &__header { display: flex; flex-direction: row;
-    justify-content: space-between; align-items: center;
-
-
-     .like {background-color: blue;}
-    
-    &__title {font-family: 'Shrikhand',cursive;
-         margin-left: 20px;}
-
-    
- 
-            
-
-    
-
-
-    &__name {margin-left:20px;
-    font-variant-caps: all-petite-caps;
-    border-bottom: $tertiary-elem-color 2px solid;
-    width: 25px;
-}
-
-    .main__card{
+    &__header {
         display: flex;
-        flex-direction: column;
-        border-radius: 20px;
-        margin-bottom: 1.3rem;
-        background-color: $secondary-color;
-        margin: 1em 1.3em 1em 1.3em;
-        box-shadow: 0 4px 8px 0 rgb(0, 0, 0 );
-        height: 70px;
-        .main__card__descr { display: flex; justify-content: space-around;
-            ;
-             .main__card__descr__text { flex-basis: 70%;
-                margin-left: 10px;
-                margin-top: 10px;
-                
-                color: black;
-                   
-                   h3 {margin:0;
-                    padding-bottom: 5px; flex-wrap: nowrap; font-size: smaller;}
-                  p {margin:0;; font-size: 0.9em;}
-                }
-            .main__card__descr__price {
-                display: flex;
-                align-items: flex-end;
-                font-weight: 700;
-                color: black;
-                font-size: 0.8em;
-            }
-        
-              }
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+
     }
-    
-              
-    
-        
-
-
-
-
+    &__title {font-family: 'Shrikhand', cursive;
+    margin-left: 20px;}
 }
 
 
@@ -117,7 +65,7 @@ header { background-color: blue;
 @media(min-width: 768px)
 
 {
- .containerall {width: 80%; margin: auto;}
+ .containerall {margin: auto;}
 
  
 .menu { display: flex;
@@ -156,4 +104,4 @@ height: auto;
    }}}
 
   
- .header {width: 70%;}}
+ .header {width: 70%;}

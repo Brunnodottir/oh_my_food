@@ -7,3 +7,47 @@
 /*pages*/
 
 
+/*like*/
+
+.like {
+    margin-right: 20px;
+    margin-top: 20px;
+
+    input#restaurant1 {display:none;}
+
+    .fancy-checkbox input[type="checkbox"],
+    .custom-checkbox .checked {
+      display: none;
+    }
+    
+    .custom-checkbox input[type="checkbox"]:checked~.checked {
+     display: inline-block;
+     background: linear-gradient(to bottom, #9356dc 10%, #ff79da);
+     color: transparent;
+   
+   }
+   .custom-checkbox input[type="checkbox"]:checked~.unchecked {
+     display: none;}
+ 
+  i { cursor: pointer;
+ font-size: larger;}
+
+
+  .fas { -webkit-text-stroke:1px black;
+   background-clip: text;
+   -webkit-background-clip: text; 
+   color: transparent;
+   background-image: linear-gradient(to top,#9356DC 0%, #FF79DA 100%);
+   background-position-y: 100px;
+   background-repeat: no-repeat;
+   transition: 800ms ease all;
+    &:hover {
+     background-position-y: 0;
+     -webkit-text-stroke-color: transparent;
+
+    &::before {
+     -webkit-text-stroke-color: linear-gradient(to top,#9356DC 0%, #FF79DA 100%);
+     -webkit-text-fill-color: transparent;
+   }
+
+}}}
