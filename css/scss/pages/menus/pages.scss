@@ -57,9 +57,28 @@ header {
     }
     &__title {font-family: 'Shrikhand', cursive;
     margin-left: 20px;}
-}
 
+    &__name {margin-left:20px;
+        font-variant-caps: all-petite-caps;
+        border-bottom: $tertiary-elem-color 2px solid;
+        width: 25px;}
 
+    &__card {display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        margin-bottom: 1.3rem;
+        background-color: $secondary-color;
+      
+    
+        min-height: 70px;
+
+    
+      &__check {background-color: red;}
+   
+
+ }}
+
+ .menu__group {background-color: $primary-color;}
 
 
 @media(min-width: 768px)
