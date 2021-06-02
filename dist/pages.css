@@ -277,8 +277,10 @@ body a {
 
 body {
   font-family: "roboto", sans-serif;
+  background-color: #f2f2f2;
 }
-body a {
+
+a {
   text-decoration: none;
 }
 
@@ -290,6 +292,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 3.5rem;
+  background-color: white;
 }
 header .logo {
   padding: 1.2rem;
@@ -316,7 +319,6 @@ header a:visited {
 }
 
 .main {
-  background-color: white;
   border-radius: 40px;
   -webkit-transform: translateY(-30px);
           transform: translateY(-30px);
@@ -360,12 +362,33 @@ header a:visited {
   background-color: white;
   min-height: 70px;
 }
-.main__card__check {
-  background-color: red;
+.main__card__descr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-
-.menu__group {
-  background-color: #f2f2f2;
+.main__card__descr__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-weight: 700;
+  color: black;
+  font-size: 0.8em;
+  margin-bottom: 15px;
+}
+.main__card__descr__text {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  margin-left: 10px;
+  color: black;
+}
+.main__card__check {
+  background-color: blue;
 }
 
 @media (min-width: 768px) {

@@ -13,7 +13,9 @@
 
 body {
     font-family: 'roboto', sans-serif;
-      a {text-decoration: none;}
+    background-color: $primary-color;}
+      a {text-decoration: none;
+   
       
 
       
@@ -24,6 +26,7 @@ header {
     display: flex;
     align-items: center;
     height: 3.5rem;
+    background-color: $secondary-color;
      .logo {padding: 1.2rem;
         margin: auto;
          img { width: 150px;}
@@ -43,7 +46,7 @@ header {
 }
 
 .main {
-    background-color: $secondary-color;
+    
     border-radius: 40px;
     transform: translateY(-30px);
     overflow: overlay;
@@ -71,14 +74,32 @@ header {
       
     
         min-height: 70px;
+       
+        &__descr { display: flex;
+            justify-content: space-around;
+        &__price {display: flex;
+            align-items: flex-end;
+                font-weight: 700;
+                color: black;
+                font-size: 0.8em;
+                margin-bottom: 15px;
+        }
+          
+      &__text {flex-basis: 70%;
+        margin-left: 10px;
+        color: black;
+    }
+        }
 
     
-      &__check {background-color: red;}
+
+    
+      &__check {background-color: blue;}
    
 
  }}
 
- .menu__group {background-color: $primary-color;}
+
 
 
 @media(min-width: 768px)
