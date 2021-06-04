@@ -13,12 +13,10 @@
 
 body {
     font-family: 'roboto', sans-serif;
-    background-color: $primary-color;}
       a {text-decoration: none;
    
-      
-
-      
+    
+      .containerall {background-color: $primary-color;}
 }
 
 
@@ -62,7 +60,6 @@ header {
     &__title {font-family: 'Shrikhand', cursive;
     margin-left: 20px;}
 
-    .cardlike {margin: 0;}
 
     &__card {display: flex;
         flex-direction: column;
@@ -256,11 +253,13 @@ margin: 10px;
 }}
 
 
+    .cardlike {padding-left: 50px;}
 
 .bouton__commande {flex-basis: 100%;}
 
+
 .main__header {justify-content: center; flex-basis: 100%;}
-.like { margin-left: 50px;}
+
     .main__name {margin:auto; margin-bottom: 1em;}
    .main__card{ margin: auto;
 margin-bottom: 1em;
@@ -283,3 +282,4 @@ height: auto;
 
   
  .header {width: 70%;}
+}

@@ -50,7 +50,7 @@
            display: flex;
            flex-direction:row;
            justify-content:space-between;
-           max-height: 70px;
+           max-height: max-content;
            .text{
                margin-left: 10px;
                margin-top: 10px;
@@ -121,6 +121,7 @@
 
   .restaurant__card-container {
     margin-top: 10px;
+    
   }
 h2{ 
       padding-top: 2rem;
@@ -130,7 +131,6 @@ h2{
   border:2px solid $tertiary-elem-color;
   position: absolute;
   align-items: center;
-  z-index: 200;
   font-family: 'roboto';
   display: flex;
   
@@ -146,7 +146,8 @@ h2{
 @media(min-width: 768px)
 
 {
-.restaurants {
+.restaurants { font-size: larger;
+  &__title {text-align: center;}
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -169,9 +170,22 @@ h2{
 
 {
     body{
-        width: 80%;
+     
         margin: auto;
+        background: transparent;
     }
+
+
+  .desktop {display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  font-size: larger;
+  background: $secondary-color;
+  padding-top: 2em;
+  .restaurants_main {flex-basis: 50%;
+  border-radius: 1em;
+margin-left: 5em;}
+}
 .restaurants {
     display: flex;
     flex-direction: row;
@@ -180,7 +194,13 @@ h2{
        h2{width: 100%;}
 
     .restaurant__card {width: 65%;
-        height: 15em;
+        max-height: max-content;
+        transform: scale(1);
+        transition: transform 800ms;
+        &:hover {
+          transform: scale(1.1);
+          filter: drop-shadow(0 0 0 1rem black);
+        }
        
     }
 }

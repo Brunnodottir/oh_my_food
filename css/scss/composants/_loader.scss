@@ -85,4 +85,36 @@ margin: 0;}
 /*faves*/
 
 
+@media(min-width: 768px)
 
+{.loader{
+    position: fixed;
+width: 100%;
+height: 100%;
+animation: loader-anim 3s ease-in forwards;
+background-color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+
+z-index: 5;}}
+
+
+
+
+
+@media screen and (min-width: 1200px)
+
+{.loader{
+    position: fixed;
+width: 100%;
+height: 100%;
+animation: loader-anim 3s ease-in forwards;
+background-color: white;
+display: flex;
+flex-direction: column;
+
+justify-content: center;
+align-items: center;
+
+z-index: 5;}}

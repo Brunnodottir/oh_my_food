@@ -4,20 +4,23 @@
     margin-top: 2rem;
     padding-top: 2rem;
     background: $secondary-color;
+    width: 100%;
     h2 {
            margin-left: 20px;}
     .howtouse__steps {
        margin-right: 10%;
-       ul {padding: 2rem ;
+       padding-bottom: 1em;
+       ul {
            display: flex;
            flex-direction: column;
            justify-content: center;
            align-items: center;
            width: 100%;
-           padding: 2rem;
            
-       .step {box-shadow: 0 0 0.8rem black;
-       border-radius: 50px;
+          
+           
+       .step {box-shadow: 0 5px 8px grey;
+       border-radius: 1.3em;
        padding: 20px 0 ;
     display: flex;
        align-items: center;
@@ -65,13 +68,16 @@
 
 {
 .howtouse{
+    &__title {text-align: center;}
     .howtouse__steps{
         margin: auto;
+        font-size: larger;
         
 
     }
-    .step {height: 4em;
-    width: 70%;}
+    .step {max-height: 4em;
+    max-width: 60%;
+    
 }
 }
 
@@ -80,15 +86,18 @@
 
 .howtouse
 {
+    flex-basis: 40%;
+    background: transparent;
     .howtouse__steps{
-        width: 50%;
+        width: auto;
         margin:auto;
 
     .step {
-        height: 4em;
-        width: 70%;}
+        
+        max-width: 100%; }
     
     }
 }
 
+}
 }
