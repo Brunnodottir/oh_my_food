@@ -111,7 +111,7 @@ header {
 
 
 
-label
+.menu__full
 {
     display: flex;
     position: relative;
@@ -140,14 +140,6 @@ label
 
 }
 
-@for $i from 1 through 4 {
-
-label:nth-of-type(#{$i})
-{
-    animation-delay: calc(.15s + #{$i}*.5s);
-}
-    
-}
 
 
 .menu__dish
@@ -230,21 +222,6 @@ transition: transform .0s .5s ease-in-out;}
 
 
   
-  
-  @keyframes slidein {
-    from {
-      transform: translateY(1.5rem);
-      opacity: 0;
-    }
-    
-  
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-
-
 
 
 

@@ -8,20 +8,7 @@
 
 
 
-@keyframes anim-cards
-{
-    from
-    {
-        transform: translateY(calc(var(--spacing)*1.5em));
-        opacity: 0;
-    }
 
-    to
-    {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
 
 
 /*like*/
