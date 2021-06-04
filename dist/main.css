@@ -251,7 +251,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   color: white;
-  background-color: #535353;
+  background-color: #353535;
   padding-bottom: 20px;
 }
 footer .options {
@@ -265,6 +265,7 @@ footer .options {
       -ms-flex-align: center;
           align-items: center;
   color: white;
+  margin-top: 2em;
 }
 footer .options p {
   padding-left: 5px;
@@ -327,7 +328,7 @@ footer .minilogo {
 .howtouse {
   margin-top: 2rem;
   padding-top: 2rem;
-  background: #f2f2f2;
+  background: white;
 }
 .howtouse h2 {
   margin-left: 20px;
@@ -450,6 +451,8 @@ footer .minilogo {
 .restaurants .boutonnew {
   background-color: #99E2D0;
   border: 2px solid #99E2D0;
+  color: darkgreen;
+  font-weight: bold;
   position: absolute;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -459,6 +462,9 @@ footer .minilogo {
   display: -ms-flexbox;
   display: flex;
   right: 2em;
+  top: 1em;
+  padding: 0.3em;
+  border-radius: 1px;
 }
 .restaurants .restaurant__card {
   display: -webkit-box;
@@ -755,7 +761,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   color: white;
-  background-color: #535353;
+  background-color: #353535;
   padding-bottom: 20px;
 }
 footer .options {
@@ -769,6 +775,7 @@ footer .options {
       -ms-flex-align: center;
           align-items: center;
   color: white;
+  margin-top: 2em;
 }
 footer .options p {
   padding-left: 5px;

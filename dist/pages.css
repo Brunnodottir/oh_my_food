@@ -164,7 +164,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   color: white;
-  background-color: #535353;
+  background-color: #353535;
   padding-bottom: 20px;
 }
 footer .options {
@@ -178,6 +178,7 @@ footer .options {
       -ms-flex-align: center;
           align-items: center;
   color: white;
+  margin-top: 2em;
 }
 footer .options p {
   padding-left: 5px;
