@@ -75,6 +75,8 @@ header {
         overflow: hidden;
         min-height: 70px;
        
+
+       
     &__descr { display: flex;
             justify-content: space-around;
     &__price {display: flex;
@@ -126,16 +128,27 @@ label
     margin-bottom: 20px;
     animation-duration: .5s;
     animation-name: slidein;
-    transition: transform 3s 2s ease-in-out;
+    transform :translateY(1.5em);
     overflow: hidden;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     max-width: 500px;
     font-size: medium;
+    box-shadow: 0 4px 8px 0 grey;
 
 
 
 }
+
+@for $i from 1 through 4 {
+
+label:nth-of-type(#{$i})
+{
+    animation-delay: calc(.15s + #{$i}*.5s);
+}
+    
+}
+
 
 .menu__dish
 {display: flex;
@@ -253,7 +266,7 @@ margin: 10px;
 }}
 
 
-    .cardlike {padding-left: 50px;}
+    .cardlike {padding-left: 50px; margin-top: -50px;}
 
 .bouton__commande {flex-basis: 100%;}
 
@@ -282,4 +295,15 @@ height: auto;
 
   
  .header {width: 70%;}
+}
+
+
+
+
+@media screen and (min-width: 1200px)
+{
+
+    .image_logo {
+    height: 30em;}
+
 }
