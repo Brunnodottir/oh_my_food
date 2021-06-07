@@ -10,7 +10,9 @@
   border-radius: 40px;
   color: white;
   font-size: 16px;
-  padding: 15px 70px;
+  padding: 15px 50px;
+  -webkit-box-shadow: 0 4px 8px 0 grey;
+          box-shadow: 0 4px 8px 0 grey;
 }
 .bouton__commande .cmmd:hover {
   cursor: pointer;
@@ -84,6 +86,7 @@
   z-index: 3;
   -webkit-animation: loader-logo 3s ease-in-out;
           animation: loader-logo 3s ease-in-out;
+  font-family: "roboto", sans-serif;
 }
 
 @-webkit-keyframes loader-logo {
@@ -131,8 +134,8 @@
   text-align: center;
   font-size: smaller;
   margin: 0;
+  /*faves*/
 }
-
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -143,7 +146,6 @@
             transform: rotate(360deg);
   }
 }
-
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -154,9 +156,8 @@
             transform: rotate(360deg);
   }
 }
-/*faves*/
 @media (min-width: 768px) {
-  .loader {
+  .texte .loader {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -176,7 +177,7 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .loader {
+  .texte .loader {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -199,6 +200,7 @@
     z-index: 5;
   }
 }
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,8 +214,9 @@ footer {
   padding-bottom: 20px;
 }
 footer .options {
-  margin-left: 20px;
-  padding-top: 10px;
+  margin: 0;
+  padding-left: 1.5em;
+  font-size: smaller;
   font-family: "roboto", "sans-serif";
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,7 +225,7 @@ footer .options {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  margin-top: 2em;
+  padding-top: 0.8em;
 }
 footer .options p {
   padding-left: 5px;
@@ -271,7 +274,7 @@ body a {
 
 .main {
   background-color: #f2f2f2;
-  padding-bottom: 20px;
+  padding-bottom: 2em;
 }
 
 /*loader*/
@@ -326,6 +329,8 @@ body a {
 
 body {
   font-family: "roboto", sans-serif;
+  margin: 0;
+  background-color: #f2f2f2;
 }
 body a {
   text-decoration: none;
@@ -366,7 +371,7 @@ body .image_logo {
      object-fit: cover;
 }
 body .main {
-  border-radius: 40px;
+  border-radius: 40px 40px 0 0;
   -webkit-transform: translateY(-30px);
           transform: translateY(-30px);
   overflow: overlay;
@@ -388,7 +393,6 @@ body .main__header {
 }
 body .main__title {
   font-family: "Shrikhand", cursive;
-  margin-left: 20px;
 }
 body .main__card {
   display: -webkit-box;
@@ -460,7 +464,6 @@ body .menu__full {
   flex-wrap: nowrap;
   border-radius: 1rem;
   cursor: pointer;
-  margin: auto;
   padding: auto;
   margin-bottom: 20px;
   -webkit-animation-duration: 0.5s;
@@ -470,8 +473,7 @@ body .menu__full {
   -webkit-transform: translateY(1.5em);
           transform: translateY(1.5em);
   overflow: hidden;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin: 1em;
   max-width: 500px;
   font-size: medium;
   -webkit-box-shadow: 0 4px 8px 0 grey;
@@ -502,6 +504,10 @@ body .menu__dish {
 }
 body .menu__dish__title {
   margin: 0;
+  padding-bottom: 0.5em;
+}
+body .menu__dishes {
+  margin-bottom: 3em;
 }
 body .menu__dishes__name {
   margin-left: 20px;
@@ -512,6 +518,8 @@ body .menu__dishes__name {
 body .menu__price {
   margin-bottom: 1em;
   margin-right: 1em;
+  font-size: small;
+  font-weight: 600;
 }
 body input {
   display: none;

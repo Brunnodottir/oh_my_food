@@ -39,7 +39,9 @@ z-index: 5;}
     justify-content: space-around;
 z-index: 3;
 animation: loader-logo 3s ease-in-out;
-}
+font-family: 'roboto', sans-serif;}
+
+
 @keyframes loader-logo
 
 {
@@ -69,7 +71,7 @@ position: relative;
 .texte {
 text-align: center;
 font-size: smaller;
-margin: 0;}
+margin: 0;
 
 @keyframes spin {
 
@@ -117,4 +119,6 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 
-z-index: 5;}}
+z-index: 5;}
+}
+}
