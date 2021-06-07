@@ -689,12 +689,14 @@ footer .minilogo {
     font-size: larger;
     background: white;
     padding-top: 2em;
+    margin-bottom: 2em;
   }
   .desktop .restaurants_main {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     border-radius: 1em;
     margin-left: 5em;
+    margin-bottom: 2em;
   }
 
   .restaurants {
@@ -1244,8 +1246,8 @@ body .menu__check .fa-check-circle {
   color: white;
   background-color: #99E2D0;
   font-size: xx-large;
-  margin-top: 0.8em;
-  margin-left: 0.2em;
+  margin-top: 0.5em;
+  margin-left: 0.1em;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
   -webkit-transition: -webkit-transform 0s 0.5s ease-in-out;
@@ -1311,7 +1313,6 @@ body .menu__check .fa-check-circle {
   }
   body .cardlike {
     padding-left: 50px;
-    margin-top: -50px;
   }
   body .bouton__commande {
     -ms-flex-preferred-size: 100%;

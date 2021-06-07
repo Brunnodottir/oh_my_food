@@ -183,9 +183,11 @@ h2{
   font-size: larger;
   background: $secondary-color;
   padding-top: 2em;
+  margin-bottom: 2em;
   .restaurants_main {flex-basis: 50%;
   border-radius: 1em;
-margin-left: 5em;}
+margin-left: 5em;
+margin-bottom: 2em;}
 }
 .restaurants {
     display: flex;
