@@ -23,6 +23,7 @@ body {
 
 
 header { 
+    flex-basis: 100%;
     display: flex;
     align-items: center;
     height: 3.5rem;
@@ -73,7 +74,7 @@ header {
         cursor: pointer;
         animation-duration: 2s;
         animation-name: slidein;
-        transition: transform 3s 2s ease-in-out;
+        transition: transform 330ms ease-in-out;
         overflow: hidden;
         min-height: 70px;
        
@@ -127,9 +128,10 @@ header {
     cursor: pointer;
     padding: auto;
     margin-bottom: 20px;
-    animation-duration: .5s;
+    animation-duration: 1s;
     animation-name: slidein;
-    transform :translateY(1.5em);
+    transform :translateY(2em);
+    transition: transform 1s ease-in-out;
     overflow: hidden;
     margin: 1em;
     max-width: 500px;
@@ -139,6 +141,21 @@ header {
 
 
 }
+
+@keyframes slidein {
+    from {
+      
+      transform: translateY(2em);
+      opacity: 0;
+    }
+    to {
+     
+    transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
 
 
 
@@ -211,20 +228,6 @@ transition: transform .0s .5s ease-in-out;}
 
 
 
- @keyframes slidein {
-    from {
-      
-      transform: translateY(1.5rem);
-      opacity: 0;
-    }
-    to {
-     
-    transform: translateY(0);
-      opacity: 1;
-    }
-  }
-
-
 
   
 
@@ -235,18 +238,33 @@ transition: transform .0s .5s ease-in-out;}
 @media(min-width: 768px)
 
 {
- .containerall {margin: auto;}
+ .containerall {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     align-content: center;
+     justify-content: center;
+     align-items: center;
+     & header {
+         flex-basis: 100%;
+     }
+ }
+
+ body {
+     .image_logo {height: 30em;}
+ }
 
  
 .menu { display: flex;
     flex-direction: row;
 flex-wrap: wrap;
-justify-content: space-around;
+justify-content: center;
 align-items: baseline;
+max-width: 1200px;
+font-size: larger;
     .menu__group {display: flex; flex-direction: column; flex-basis: 45%;
 margin: 10px;
 }}
-
 
     .cardlike {padding-left: 50px;}
 
@@ -286,6 +304,13 @@ height: auto;
 {
 
     .image_logo {
-    height: 30em;}
+    max-width: 1500px;
+border-radius: 40px 40px 0 0;}
+
+body {
+  .menu__full {font-size: x-large;}
 
 }
+
+}
+
