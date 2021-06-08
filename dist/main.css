@@ -223,8 +223,8 @@ body a {
 @media screen and (min-width: 1200px) {
   .texte .loader {
     position: fixed;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     -webkit-animation: loader-anim 3s ease-in forwards;
             animation: loader-anim 3s ease-in forwards;
     background-color: white;
@@ -386,6 +386,7 @@ footer .minilogo {
   .explore {
     font-size: larger;
     background-color: transparent;
+    padding: 1em;
   }
 }
 .howtouse {
@@ -482,6 +483,7 @@ footer .minilogo {
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .howtouse {
+    margin: auto;
     -ms-flex-preferred-size: 40%;
         flex-basis: 40%;
     background: transparent;
@@ -491,7 +493,7 @@ footer .minilogo {
     margin: auto;
   }
   .howtouse .howtouse__steps .step {
-    max-width: 100%;
+    max-width: 80%;
   }
 }
 /*boutons*/
@@ -642,27 +644,6 @@ footer .minilogo {
 }
 
 @media (min-width: 768px) {
-  .restaurants .restaurant__card-container {
-    margin-top: 10px;
-  }
-  .restaurants h2 {
-    padding-top: 2rem;
-    margin-left: 20px;
-  }
-  .restaurants .boutonnew {
-    background-color: #99E2D0;
-    border: 2px solid #99E2D0;
-    position: absolute;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-family: "roboto";
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-@media (min-width: 768px) {
   .restaurants {
     font-size: larger;
     display: -webkit-box;
@@ -694,66 +675,15 @@ footer .minilogo {
     background: transparent;
   }
 
-  .desktop {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    font-size: larger;
-    background: white;
-    padding-top: 2em;
-    margin-bottom: 2em;
-  }
-  .desktop .restaurants_main {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    border-radius: 1em;
-    margin-left: 5em;
-    margin-bottom: 2em;
-  }
-
   .restaurants {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    font-size: x-large;
+    max-width: 1500px;
   }
   .restaurants h2 {
     width: 100%;
   }
   .restaurants .restaurant__card {
-    width: 65%;
-    max-height: -webkit-max-content;
-    max-height: -moz-max-content;
-    max-height: max-content;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transition: -webkit-transform 800ms;
-    transition: -webkit-transform 800ms;
-    transition: transform 800ms;
-    transition: transform 800ms, -webkit-transform 800ms;
-  }
-  .restaurants .restaurant__card:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    -webkit-filter: drop-shadow(0 0 0 1rem black);
-            filter: drop-shadow(0 0 0 1rem black);
-  }
-
-  .explore {
-    height: 0.2em;
+    width: 40%;
   }
 }
 /*boutons*/
@@ -896,8 +826,8 @@ footer .minilogo {
 @media screen and (min-width: 1200px) {
   .texte .loader {
     position: fixed;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     -webkit-animation: loader-anim 3s ease-in forwards;
             animation: loader-anim 3s ease-in forwards;
     background-color: white;
@@ -1175,10 +1105,10 @@ body .main__card__descr__text {
   color: black;
 }
 body .menu__full {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -ms-flex-line-pack: justify;
@@ -1199,6 +1129,8 @@ body .menu__full {
           animation-duration: 1s;
   -webkit-animation-name: slidein;
           animation-name: slidein;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   -webkit-transform: translateY(2em);
           transform: translateY(2em);
   -webkit-transition: -webkit-transform 1s ease-in-out;
@@ -1211,6 +1143,12 @@ body .menu__full {
   font-size: medium;
   -webkit-box-shadow: 0 4px 8px 0 grey;
           box-shadow: 0 4px 8px 0 grey;
+}
+body .menu__full .menu__left {
+  width: 100%;
+}
+body .menu__full:hover .menu__left {
+  width: 90%;
 }
 @-webkit-keyframes slidein {
   from {
@@ -1443,6 +1381,9 @@ body .header {
     border-radius: 40px 40px 0 0;
   }
 
+  body {
+    margin: auto;
+  }
   body .menu__full {
     font-size: x-large;
   }

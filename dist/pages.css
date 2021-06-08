@@ -179,8 +179,8 @@
 @media screen and (min-width: 1200px) {
   .texte .loader {
     position: fixed;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     -webkit-animation: loader-anim 3s ease-in forwards;
             animation: loader-anim 3s ease-in forwards;
     background-color: white;
@@ -458,10 +458,10 @@ body .main__card__descr__text {
   color: black;
 }
 body .menu__full {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -ms-flex-line-pack: justify;
@@ -482,6 +482,8 @@ body .menu__full {
           animation-duration: 1s;
   -webkit-animation-name: slidein;
           animation-name: slidein;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   -webkit-transform: translateY(2em);
           transform: translateY(2em);
   -webkit-transition: -webkit-transform 1s ease-in-out;
@@ -494,6 +496,12 @@ body .menu__full {
   font-size: medium;
   -webkit-box-shadow: 0 4px 8px 0 grey;
           box-shadow: 0 4px 8px 0 grey;
+}
+body .menu__full .menu__left {
+  width: 100%;
+}
+body .menu__full:hover .menu__left {
+  width: 90%;
 }
 @-webkit-keyframes slidein {
   from {
@@ -726,6 +734,9 @@ body .header {
     border-radius: 40px 40px 0 0;
   }
 
+  body {
+    margin: auto;
+  }
   body .menu__full {
     font-size: x-large;
   }

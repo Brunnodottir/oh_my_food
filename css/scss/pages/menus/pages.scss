@@ -116,8 +116,8 @@ header {
 
 .menu__full
 {
-    display: flex;
     position: relative;
+    display: flex;
     flex-wrap: nowrap;
     align-content: space-between;
     justify-content: space-between;
@@ -130,6 +130,7 @@ header {
     margin-bottom: 20px;
     animation-duration: 1s;
     animation-name: slidein;
+    animation-fill-mode: forwards;
     transform :translateY(2em);
     transition: transform 1s ease-in-out;
     overflow: hidden;
@@ -137,6 +138,14 @@ header {
     max-width: 500px;
     font-size: medium;
     box-shadow: 0 4px 8px 0 grey;
+    .menu__left {
+    width: 100%;
+    }
+     &:hover {
+         .menu__left {
+             width: 90%;
+         }
+     }
 
 
 
@@ -308,6 +317,7 @@ height: auto;
 border-radius: 40px 40px 0 0;}
 
 body {
+    margin: auto;
   .menu__full {font-size: x-large;}
 
 }

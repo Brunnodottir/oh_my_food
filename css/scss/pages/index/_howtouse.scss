@@ -87,6 +87,7 @@
 
 .howtouse
 {
+    margin: auto;
     flex-basis: 40%;
     background: transparent;
     .howtouse__steps{
@@ -95,7 +96,7 @@
 
     .step {
         
-        max-width: 100%; }
+        max-width: 80%; }
     
     }
 }
