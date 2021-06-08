@@ -169,17 +169,21 @@ header {
 
 
 .menu__dish
-{display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-align-content: flex-start;
-justify-content: space-evenly;
-align-items: flex-start;
-flex-basis: 70%;
+{
+overflow: hidden;
 margin: 1em;
 font-size: smaller;
- &__title {margin: 0;
-padding-bottom: 0.5em;}
+ strong { display: block;
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;}
+span {
+    display: block;
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+
+}
 
 }
 
@@ -218,7 +222,6 @@ input
 position: absolute;
 left: 100%;
 height: 100%;
-width: 10%;
 border: 2px solid $tertiary-elem-color;
 transition: transform .5s ease-in-out;
 
@@ -318,9 +321,34 @@ border-radius: 40px 40px 0 0;}
 
 body {
     margin: auto;
-  .menu__full {font-size: x-large;}
+  .menu__full {font-size: x-large;
+   .menu__price {font-size: large;}}
+
 
 }
 
+
+
+.menu__check
+  {background-color: $tertiary-elem-color;
+position: absolute;
+left: 100%;
+height: 100%;
+border: 2px solid $tertiary-elem-color;
+transition: transform .5s ease-in-out;
+
+ .fa-check-circle {
+     color: white;
+     background-color: $tertiary-elem-color;
+     font-size: xx-large;
+     margin-top: 0.8em;
+     margin-left: 0.1em;
+transform: rotate(-180deg);
+transition: transform .0s .5s ease-in-out;}
+
+
+
 }
 
+
+}
