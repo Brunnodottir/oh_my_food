@@ -63,20 +63,6 @@ header {
     &__title {font-family: 'Shrikhand', cursive;
 }
 
-
-    &__card {display: flex;
-        flex-direction: column;
-        position: relative;
-        border-radius: 20px;
-        flex-wrap: nowrap;
-        margin: 1em;
-        background-color: $secondary-color;
-        cursor: pointer;
-        animation-duration: 2s;
-        animation-name: slidein;
-        transition: transform 330ms ease-in-out;
-        overflow: hidden;
-        min-height: 70px;
        
 
        
@@ -128,16 +114,12 @@ header {
     cursor: pointer;
     padding: auto;
     margin-bottom: 20px;
-    animation-duration: 1s;
-    animation-name: slidein;
-    animation-fill-mode: forwards;
-    transform :translateY(2em);
-    transition: transform 1s ease-in-out;
     overflow: hidden;
     margin: 1em;
     max-width: 500px;
     font-size: medium;
     box-shadow: 0 4px 8px 0 grey;
+    opacity: 0;
     .menu__left {
     width: 100%;
     }
@@ -147,6 +129,40 @@ header {
          }
      }
 
+
+}
+
+
+.item1 {
+    animation-name: slidein;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+
+
+
+}
+
+.item2 {
+    animation-name: slidein;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: 0.2s;
+
+}
+
+.item3
+{
+    animation-name: slidein;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-delay: 0.4s;
 
 
 }
@@ -307,7 +323,7 @@ height: auto;
 
   
  .header {width: 70%;}
-}
+
 
 
 
@@ -322,7 +338,7 @@ border-radius: 40px 40px 0 0;}
 body {
     margin: auto;
   .menu__full {font-size: x-large;
-   .menu__price {font-size: large;}}
+   .menu__price {font-size: l;}
 
 
 }
@@ -351,4 +367,5 @@ transition: transform .0s .5s ease-in-out;}
 }
 
 
+}
 }

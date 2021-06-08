@@ -1125,30 +1125,61 @@ body .menu__full {
   cursor: pointer;
   padding: auto;
   margin-bottom: 20px;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-name: slidein;
-          animation-name: slidein;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-transform: translateY(2em);
-          transform: translateY(2em);
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
   overflow: hidden;
   margin: 1em;
   max-width: 500px;
   font-size: medium;
   -webkit-box-shadow: 0 4px 8px 0 grey;
           box-shadow: 0 4px 8px 0 grey;
+  opacity: 0;
 }
 body .menu__full .menu__left {
   width: 100%;
 }
 body .menu__full:hover .menu__left {
   width: 90%;
+}
+body .item1 {
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+body .item2 {
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+body .item3 {
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 @-webkit-keyframes slidein {
   from {
@@ -1377,7 +1408,7 @@ body .header {
     font-size: x-large;
   }
   body .menu__full .menu__price {
-    font-size: large;
+    font-size: l;
   }
 
   .menu__check {
