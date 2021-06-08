@@ -387,6 +387,8 @@ footer .minilogo {
     font-size: larger;
     background-color: transparent;
     padding: 1em;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 .howtouse {
@@ -1053,40 +1055,14 @@ body .main__header {
 body .main__title {
   font-family: "Shrikhand", cursive;
 }
-body .main__card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-  border-radius: 20px;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  margin: 1em;
-  background-color: white;
-  cursor: pointer;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-name: slidein;
-          animation-name: slidein;
-  -webkit-transition: -webkit-transform 330ms ease-in-out;
-  transition: -webkit-transform 330ms ease-in-out;
-  transition: transform 330ms ease-in-out;
-  transition: transform 330ms ease-in-out, -webkit-transform 330ms ease-in-out;
-  overflow: hidden;
-  min-height: 70px;
-}
-body .main__card__descr {
+body .main__descr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-body .main__card__descr__price {
+body .main__descr__price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1098,13 +1074,14 @@ body .main__card__descr__price {
   font-size: 0.8em;
   margin-bottom: 15px;
 }
-body .main__card__descr__text {
+body .main__descr__text {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
   margin-left: 10px;
   color: black;
 }
-body .menu__full {
+
+.menu__full {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1133,13 +1110,14 @@ body .menu__full {
           box-shadow: 0 4px 8px 0 grey;
   opacity: 0;
 }
-body .menu__full .menu__left {
+.menu__full .menu__left {
   width: 100%;
 }
-body .menu__full:hover .menu__left {
+.menu__full:hover .menu__left {
   width: 90%;
 }
-body .item1 {
+
+.item1 {
   -webkit-animation-name: slidein;
           animation-name: slidein;
   -webkit-animation-duration: 1s;
@@ -1153,7 +1131,8 @@ body .item1 {
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
 }
-body .item2 {
+
+.item2 {
   -webkit-animation-name: slidein;
           animation-name: slidein;
   -webkit-animation-duration: 1s;
@@ -1167,7 +1146,8 @@ body .item2 {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
-body .item3 {
+
+.item3 {
   -webkit-animation-name: slidein;
           animation-name: slidein;
   -webkit-animation-duration: 1s;
@@ -1181,6 +1161,7 @@ body .item3 {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
+
 @-webkit-keyframes slidein {
   from {
     -webkit-transform: translateY(2em);
@@ -1193,6 +1174,7 @@ body .item3 {
     opacity: 1;
   }
 }
+
 @keyframes slidein {
   from {
     -webkit-transform: translateY(2em);
@@ -1205,49 +1187,53 @@ body .item3 {
     opacity: 1;
   }
 }
-body .menu__dish {
+.menu__dish {
   overflow: hidden;
   margin: 1em;
   font-size: smaller;
 }
-body .menu__dish strong {
+.menu__dish strong {
   display: block;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
-body .menu__dish span {
+.menu__dish span {
   display: block;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
-body .menu__dishes {
+
+.menu__dishes {
   margin-bottom: 3em;
 }
-body .menu__dishes__name {
+
+.menu__dishes__name {
   margin-left: 20px;
   font-variant-caps: all-petite-caps;
   border-bottom: #99E2D0 2px solid;
   width: 25px;
 }
-body .menu__price {
+
+.menu__price {
   margin-bottom: 1em;
   margin-right: 1em;
   font-size: small;
   font-weight: 600;
 }
-body input {
+
+input {
   display: none;
 }
-body input:checked + label .menu__price, body input + label:hover .menu__price, body input + label:focus .menu__price {
+input:checked + label .menu__price, input + label:hover .menu__price, input + label:focus .menu__price {
   width: 30%;
 }
-body input:checked + label .menu__check, body input + label:hover .menu__check, body input + label:focus .menu__check {
+input:checked + label .menu__check, input + label:hover .menu__check, input + label:focus .menu__check {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
 }
-body input:checked + label .fa-check-circle, body input + label:hover .fa-check-circle, body input + label:focus .fa-check-circle {
+input:checked + label .fa-check-circle, input + label:hover .fa-check-circle, input + label:focus .fa-check-circle {
   -webkit-transition: -webkit-transform 0.5s 0.2s ease-in-out;
   transition: -webkit-transform 0.5s 0.2s ease-in-out;
   transition: transform 0.5s 0.2s ease-in-out;
@@ -1255,7 +1241,8 @@ body input:checked + label .fa-check-circle, body input + label:hover .fa-check-
   -webkit-transform: rotate(0);
           transform: rotate(0);
 }
-body .menu__check {
+
+.menu__check {
   background-color: #99E2D0;
   position: absolute;
   left: 100%;
@@ -1266,7 +1253,7 @@ body .menu__check {
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
-body .menu__check .fa-check-circle {
+.menu__check .fa-check-circle {
   color: white;
   background-color: #99E2D0;
   font-size: xx-large;
@@ -1279,8 +1266,9 @@ body .menu__check .fa-check-circle {
   transition: transform 0s 0.5s ease-in-out;
   transition: transform 0s 0.5s ease-in-out, -webkit-transform 0s 0.5s ease-in-out;
 }
+
 @media (min-width: 768px) {
-  body .containerall {
+  .containerall {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1299,14 +1287,16 @@ body .menu__check .fa-check-circle {
         -ms-flex-align: center;
             align-items: center;
   }
-  body .containerall header {
+  .containerall header {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-  body body .image_logo {
+
+  body .image_logo {
     height: 30em;
   }
-  body .menu {
+
+  .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1325,7 +1315,7 @@ body .menu__check .fa-check-circle {
     max-width: 1200px;
     font-size: larger;
   }
-  body .menu .menu__group {
+  .menu .menu__group {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1337,31 +1327,36 @@ body .menu__check .fa-check-circle {
         flex-basis: 45%;
     margin: 10px;
   }
-  body .cardlike {
+
+  .cardlike {
     padding-left: 50px;
   }
-  body .bouton__commande {
+
+  .bouton__commande {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-  body .main__header {
+
+  .main__header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-  body .main__name {
+
+  .main__name {
     margin: auto;
     margin-bottom: 1em;
   }
-  body .main__card {
+
+  .main__card {
     margin: auto;
     margin-bottom: 1em;
     width: 90%;
     height: auto;
   }
-  body .main__card .main__card__descr {
+  .main__card .main__card__descr {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1376,22 +1371,22 @@ body .menu__check .fa-check-circle {
             justify-content: space-between;
     padding: 15Px;
   }
-  body .main__card .main__card__descr .main__card__descr__text {
+  .main__card .main__card__descr .main__card__descr__text {
     -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
   }
-  body .main__card .main__card__descr .main__card__descr__text h3 {
+  .main__card .main__card__descr .main__card__descr__text h3 {
     font-size: 0.8em;
   }
-  body .main__card .main__card__descr .main__card__descr__text p {
+  .main__card .main__card__descr .main__card__descr__text p {
     font-size: 0.8em;
   }
-  body .main__card .main__card__descr .main__card__descr__text .main__card__descr__price {
+  .main__card .main__card__descr .main__card__descr__text .main__card__descr__price {
     font-size: 0.8em;
     padding-bottom: 0.5em;
   }
 }
-body .header {
+.header {
   width: 70%;
 }
 
@@ -1410,8 +1405,7 @@ body .header {
   body .menu__full .menu__price {
     font-size: l;
   }
-
-  .menu__check {
+  body .menu__check {
     background-color: #99E2D0;
     position: absolute;
     left: 100%;
@@ -1422,7 +1416,7 @@ body .header {
     transition: transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
-  .menu__check .fa-check-circle {
+  body .menu__check .fa-check-circle {
     color: white;
     background-color: #99E2D0;
     font-size: xx-large;
