@@ -46,8 +46,7 @@ header {
     
 }
 
-.main {
-    
+.main {    
     border-radius: 40px 40px 0 0;
     transform: translateY(-30px);
     overflow: overlay;
@@ -61,19 +60,9 @@ header {
 
     }
     &__title {font-family: 'Shrikhand', cursive;
-}
 
-       
 
-       
-    &__descr { display: flex;
-            justify-content: space-around;
-    &__price {display: flex;
-            align-items: flex-end;
-                font-weight: 700;
-                color: black;
-                font-size: 0.8em;
-                margin-bottom: 15px;
+    
         }
           
     &__text {flex-basis: 70%;
@@ -96,7 +85,7 @@ header {
          
       
 
- }
+ 
 
 
 
@@ -213,7 +202,15 @@ overflow: hidden;
 .menu__price{margin-bottom: 1em;
 margin-right: 1em;
 font-size: small;
-font-weight: 600;}
+font-weight: 600;
+transition-property: width;
+transition-duration:0.6s;
+transition-timing-function: ease-in-out;
+transition-delay: 0s;
+animation-fill-mode: forwards;
+width: 1em;
+
+}
 
 input
 {
@@ -221,7 +218,8 @@ input
     &:checked + label, &+ label:hover, & +label:focus
     {
         .menu__price
-        {width: 30%;}
+        {width: 1.5em;
+     ;}
 
         .menu__check
         {transform: translateX(-100%);}
