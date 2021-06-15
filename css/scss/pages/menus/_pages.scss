@@ -18,16 +18,18 @@ body {
       a {text-decoration: none;
    
     
-      .containerall {background-color: $primary-color;}
+      .containerall
+       {background-color: $primary-color;}
 }
 
 
 header { 
+
     flex-basis: 100%;
     display: flex;
     align-items: center;
     height: 3.5rem;
-    background-color: $secondary-color;
+    background-color:$secondary-color;
      .logo {padding: 1.2rem;
         margin: auto;
          img { width: 150px;}
@@ -64,11 +66,7 @@ header {
 
     
         }
-          
-    &__text {flex-basis: 70%;
-        margin-left: 10px;
-        color: black;
-    }
+        
         }
 
     
@@ -97,8 +95,7 @@ header {
     align-content: space-between;
     justify-content: space-between;
     align-items: flex-end;
-    background-color:white;
-    flex-wrap: nowrap;
+    background-color: $secondary-color;
     border-radius: 1rem;
     cursor: pointer;
     padding: auto;
@@ -109,14 +106,8 @@ header {
     font-size: medium;
     box-shadow: 0 4px 8px 0 grey;
     opacity: 0;
-    .menu__left {
-    width: 100%;
-    }
-     &:hover {
-         .menu__left {
-             width: 90%;
-         }
-     }
+    height: 60px;
+    
 
 
 }
@@ -170,6 +161,12 @@ header {
   }
 
 
+  .menu__dishes {margin-bottom: 3em;}
+
+.menu__dishes__name { margin-left:20px;
+    font-variant-caps: all-petite-caps;
+    border-bottom: $tertiary-elem-color 2px solid;
+    width: 25px;}
 
 
 
@@ -178,6 +175,8 @@ header {
 overflow: hidden;
 margin: 1em;
 font-size: smaller;
+width: calc(100% - 20px - 40px);
+
  strong { display: block;
 text-overflow: ellipsis;
 white-space: nowrap;
@@ -189,40 +188,57 @@ white-space: nowrap;
 overflow: hidden;
 
 }
-
 }
 
-.menu__dishes {margin-bottom: 3em;}
 
-.menu__dishes__name { margin-left:20px;
-    font-variant-caps: all-petite-caps;
-    border-bottom: $tertiary-elem-color 2px solid;
-    width: 25px;}
 
-.menu__price{margin-bottom: 1em;
+.menu__price
+{margin-bottom: 1em;
 margin-right: 1em;
 font-size: small;
 font-weight: 600;
-transition-property: width;
-transition-duration:0.6s;
-transition-timing-function: ease-in-out;
-transition-delay: 0s;
+transition: ease-in-out all 0.5s;
 animation-fill-mode: forwards;
-width: 1em;
+width: 25px;
 
 }
+
+$default-transition: all ease-in 0.5s;
+
+.menu__check
+  {
+background-color: $tertiary-elem-color;
+width: 0;
+height: 100%;
+left: 100%;
+transition : all 0.5s ease-in;
+display: flex;
+justify-content: center;
+align-items: center;
+
+ .fa-check-circle {
+     color: white;
+     
+     font-size: xx-large;
+    
+transform: rotate(-180deg);
+transition: transform .0.5s .2s ease-in-out;}
+
+
+
+}
+
 
 input
 {
     display: none;
     &:checked + label, &+ label:hover, & +label:focus
     {
-        .menu__price
-        {width: 1.5em;
-     ;}
+        .menu__price {width: 1.5em;}
+     
 
         .menu__check
-        {transform: translateX(-100%);}
+        {width: 40%;}
 
         .fa-check-circle {
             transition: transform .5s .2s ease-in-out;
@@ -230,35 +246,6 @@ input
         }
     }
 }
-
-.menu__check
-  {background-color: $tertiary-elem-color;
-position: absolute;
-left: 100%;
-height: 100%;
-border: 2px solid $tertiary-elem-color;
-transition: transform .5s ease-in-out;
-
- .fa-check-circle {
-     color: white;
-     background-color: $tertiary-elem-color;
-     font-size: xx-large;
-     margin-top: 0.5em;
-     margin-left: 0.1em;
-transform: rotate(-180deg);
-transition: transform .0s .5s ease-in-out;}
-
-
-
-}
-
-
-
-
-  
-
-
-
 
 
 @media(min-width: 768px)
@@ -299,28 +286,10 @@ margin: 10px;
 
 .main__header {justify-content: center; flex-basis: 100%;}
 
-    .main__name {margin:auto; margin-bottom: 1em;}
-   .main__card{ margin: auto;
-margin-bottom: 1em;
-width: 90%;
-height: auto;
-   .main__card__descr {
-       display: flex;
-       flex-direction: row;
-       flex-wrap: nowrap;
-       justify-content: space-between;
-       padding: 15Px;
-    .main__card__descr__text { flex-basis: 70%;
-        h3 {font-size: 0.8em;}
-        p { font-size: 0.8em;
-        }
-    .main__card__descr__price { font-size: 0.8em; padding-bottom: 0.5em;}
-        ;}
-
-   }}}
+    
 
   
- .header {width: 70%;}
+ header {width: 70%;}
 
 
 
@@ -358,12 +327,8 @@ transition: transform .5s ease-in-out;
      margin-top: 0.8em;
      margin-left: 0.1em;
 transform: rotate(-180deg);
-transition: transform .0s .5s ease-in-out;}
+transition: transform .0s .5s ease-in-out;}}
+ }}}
 
 
 
-}
-
-
-}
-}

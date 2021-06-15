@@ -1,11 +1,12 @@
 @import '../../utils/variables';
 
-.explore{ background-color: $primary-color;
+.explore{ background-color:$secondary-color;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     padding:10% 15%;
+
     
      h2 {text-align: center; margin-bottom: 0;}
      p {text-align: center; color: gray;}
@@ -13,6 +14,8 @@
     .explore__btn{
        border: none;
        padding: 15px 30px;
+       box-shadow: 0 4px 8px 0 grey;
+
        background: linear-gradient(
          135deg
          , #FF79DA, #9356DC);
@@ -22,7 +25,12 @@
          outline: 2px;;
        }
        &:hover { background: linear-gradient( 135deg, #9356DC, #FF79DA);
-      cursor: pointer; transform: scale(1.1); transition: transform 800ms;}
+      cursor: pointer; transform: scale(1.1); transition: transform 800ms;
+      opacity: 80%;
+      box-shadow: 1px 5px 12px 0 grey;
+
+
+    }
        }
     }
 
@@ -36,5 +44,6 @@
       background-color: transparent;
       padding: 1em;
       flex-basis: 100%;
+      width: 100%;
     }
   }

@@ -16,9 +16,6 @@
 }
 .like .custom-checkbox input[type=checkbox]:checked ~ .checked {
   display: inline-block;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #9356dc), to(#ff79da));
-  background: linear-gradient(to bottom, #9356dc 10%, #ff79da);
-  color: transparent;
 }
 .like .custom-checkbox input[type=checkbox]:checked ~ .unchecked {
   display: none;
@@ -263,6 +260,9 @@ body a {
 }
 .bouton__commande .cmmd:hover {
   cursor: pointer;
+  opacity: 90%;
+  -webkit-box-shadow: 1px 5px 12px 0 grey;
+          box-shadow: 1px 5px 12px 0 grey;
 }
 
 header .logo {
@@ -338,7 +338,7 @@ footer .minilogo {
   }
 }
 .explore {
-  background-color: #f2f2f2;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,6 +364,8 @@ footer .minilogo {
 .explore .explore__btn {
   border: none;
   padding: 15px 30px;
+  -webkit-box-shadow: 0 4px 8px 0 grey;
+          box-shadow: 0 4px 8px 0 grey;
   background: linear-gradient(135deg, #FF79DA, #9356DC);
   border-radius: 40px;
   color: white;
@@ -380,6 +382,9 @@ footer .minilogo {
   transition: -webkit-transform 800ms;
   transition: transform 800ms;
   transition: transform 800ms, -webkit-transform 800ms;
+  opacity: 80%;
+  -webkit-box-shadow: 1px 5px 12px 0 grey;
+          box-shadow: 1px 5px 12px 0 grey;
 }
 
 @media screen and (min-width: 1200px) {
@@ -389,6 +394,7 @@ footer .minilogo {
     padding: 1em;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    width: 100%;
   }
 }
 .howtouse {
@@ -516,6 +522,9 @@ footer .minilogo {
 }
 .bouton__commande .cmmd:hover {
   cursor: pointer;
+  opacity: 90%;
+  -webkit-box-shadow: 1px 5px 12px 0 grey;
+          box-shadow: 1px 5px 12px 0 grey;
 }
 
 .restaurants_main {
@@ -706,6 +715,9 @@ footer .minilogo {
 }
 .bouton__commande .cmmd:hover {
   cursor: pointer;
+  opacity: 90%;
+  -webkit-box-shadow: 1px 5px 12px 0 grey;
+          box-shadow: 1px 5px 12px 0 grey;
 }
 
 /*loader*/
@@ -954,9 +966,6 @@ body a {
 }
 .like .custom-checkbox input[type=checkbox]:checked ~ .checked {
   display: inline-block;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #9356dc), to(#ff79da));
-  background: linear-gradient(to bottom, #9356dc 10%, #ff79da);
-  color: transparent;
 }
 .like .custom-checkbox input[type=checkbox]:checked ~ .unchecked {
   display: none;
@@ -1055,31 +1064,6 @@ body .main__header {
 body .main__title {
   font-family: "Shrikhand", cursive;
 }
-body .main__descr {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-body .main__descr__price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  font-weight: 700;
-  color: black;
-  font-size: 0.8em;
-  margin-bottom: 15px;
-}
-body .main__descr__text {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%;
-  margin-left: 10px;
-  color: black;
-}
 
 .menu__full {
   position: relative;
@@ -1097,7 +1081,6 @@ body .main__descr__text {
       -ms-flex-align: end;
           align-items: flex-end;
   background-color: white;
-  flex-wrap: nowrap;
   border-radius: 1rem;
   cursor: pointer;
   padding: auto;
@@ -1109,12 +1092,7 @@ body .main__descr__text {
   -webkit-box-shadow: 0 4px 8px 0 grey;
           box-shadow: 0 4px 8px 0 grey;
   opacity: 0;
-}
-.menu__full .menu__left {
-  width: 100%;
-}
-.menu__full:hover .menu__left {
-  width: 90%;
+  height: 60px;
 }
 
 .item1 {
@@ -1187,10 +1165,22 @@ body .main__descr__text {
     opacity: 1;
   }
 }
+.menu__dishes {
+  margin-bottom: 3em;
+}
+
+.menu__dishes__name {
+  margin-left: 20px;
+  font-variant-caps: all-petite-caps;
+  border-bottom: #99E2D0 2px solid;
+  width: 25px;
+}
+
 .menu__dish {
   overflow: hidden;
   margin: 1em;
   font-size: smaller;
+  width: calc(100% - 20px - 40px);
 }
 .menu__dish strong {
   display: block;
@@ -1205,33 +1195,54 @@ body .main__descr__text {
   overflow: hidden;
 }
 
-.menu__dishes {
-  margin-bottom: 3em;
-}
-
-.menu__dishes__name {
-  margin-left: 20px;
-  font-variant-caps: all-petite-caps;
-  border-bottom: #99E2D0 2px solid;
-  width: 25px;
-}
-
 .menu__price {
   margin-bottom: 1em;
   margin-right: 1em;
   font-size: small;
   font-weight: 600;
+  -webkit-transition: ease-in-out all 0.5s;
+  transition: ease-in-out all 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  width: 25px;
+}
+
+.menu__check {
+  background-color: #99E2D0;
+  width: 0;
+  height: 100%;
+  left: 100%;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu__check .fa-check-circle {
+  color: white;
+  font-size: xx-large;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-transition: -webkit-transform 0 0.5s 0.2s ease-in-out;
+  transition: -webkit-transform 0 0.5s 0.2s ease-in-out;
+  transition: transform 0 0.5s 0.2s ease-in-out;
+  transition: transform 0 0.5s 0.2s ease-in-out, -webkit-transform 0 0.5s 0.2s ease-in-out;
 }
 
 input {
   display: none;
 }
 input:checked + label .menu__price, input + label:hover .menu__price, input + label:focus .menu__price {
-  width: 30%;
+  width: 1.5em;
 }
 input:checked + label .menu__check, input + label:hover .menu__check, input + label:focus .menu__check {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  width: 40%;
 }
 input:checked + label .fa-check-circle, input + label:hover .fa-check-circle, input + label:focus .fa-check-circle {
   -webkit-transition: -webkit-transform 0.5s 0.2s ease-in-out;
@@ -1240,31 +1251,6 @@ input:checked + label .fa-check-circle, input + label:hover .fa-check-circle, in
   transition: transform 0.5s 0.2s ease-in-out, -webkit-transform 0.5s 0.2s ease-in-out;
   -webkit-transform: rotate(0);
           transform: rotate(0);
-}
-
-.menu__check {
-  background-color: #99E2D0;
-  position: absolute;
-  left: 100%;
-  height: 100%;
-  border: 2px solid #99E2D0;
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-}
-.menu__check .fa-check-circle {
-  color: white;
-  background-color: #99E2D0;
-  font-size: xx-large;
-  margin-top: 0.5em;
-  margin-left: 0.1em;
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-  -webkit-transition: -webkit-transform 0s 0.5s ease-in-out;
-  transition: -webkit-transform 0s 0.5s ease-in-out;
-  transition: transform 0s 0.5s ease-in-out;
-  transition: transform 0s 0.5s ease-in-out, -webkit-transform 0s 0.5s ease-in-out;
 }
 
 @media (min-width: 768px) {
@@ -1345,52 +1331,11 @@ input:checked + label .fa-check-circle, input + label:hover .fa-check-circle, in
         flex-basis: 100%;
   }
 
-  .main__name {
-    margin: auto;
-    margin-bottom: 1em;
-  }
-
-  .main__card {
-    margin: auto;
-    margin-bottom: 1em;
-    width: 90%;
-    height: auto;
-  }
-  .main__card .main__card__descr {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 15Px;
-  }
-  .main__card .main__card__descr .main__card__descr__text {
-    -ms-flex-preferred-size: 70%;
-        flex-basis: 70%;
-  }
-  .main__card .main__card__descr .main__card__descr__text h3 {
-    font-size: 0.8em;
-  }
-  .main__card .main__card__descr .main__card__descr__text p {
-    font-size: 0.8em;
-  }
-  .main__card .main__card__descr .main__card__descr__text .main__card__descr__price {
-    font-size: 0.8em;
-    padding-bottom: 0.5em;
+  header {
+    width: 70%;
   }
 }
-.header {
-  width: 70%;
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .image_logo {
     max-width: 1500px;
     border-radius: 40px 40px 0 0;

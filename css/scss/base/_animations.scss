@@ -28,8 +28,7 @@
     
     .custom-checkbox input[type="checkbox"]:checked~.checked {
      display: inline-block;
-     background: linear-gradient(to bottom, #9356dc 10%, #ff79da);
-     color: transparent;
+    
    
    }
    .custom-checkbox input[type="checkbox"]:checked~.unchecked {

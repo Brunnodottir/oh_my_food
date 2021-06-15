@@ -256,8 +256,6 @@ body a {
 }
 .like .custom-checkbox input[type=checkbox]:checked ~ .checked {
   display: inline-block;
-  background: linear-gradient(to bottom, #9356dc 10%, #ff79da);
-  color: transparent;
 }
 .like .custom-checkbox input[type=checkbox]:checked ~ .unchecked {
   display: none;
@@ -339,14 +337,8 @@ body .main__header {
 body .main__title {
   font-family: "Shrikhand", cursive;
 }
-body .main__text {
-  flex-basis: 70%;
-  margin-left: 10px;
-  color: black;
-}
 
 .menu__full {
-  position: relative;
   display: flex;
   flex-wrap: nowrap;
   align-content: space-between;
@@ -356,7 +348,6 @@ body .main__text {
   flex-wrap: nowrap;
   border-radius: 1rem;
   cursor: pointer;
-  padding: auto;
   margin-bottom: 20px;
   overflow: hidden;
   margin: 1em;
@@ -364,12 +355,6 @@ body .main__text {
   font-size: medium;
   box-shadow: 0 4px 8px 0 grey;
   opacity: 0;
-}
-.menu__full .menu__left {
-  width: 100%;
-}
-.menu__full:hover .menu__left {
-  width: 90%;
 }
 
 .item1 {
@@ -438,10 +423,24 @@ body .main__text {
     opacity: 1;
   }
 }
+.menu__dishes {
+  margin-bottom: 3em;
+}
+
+.menu__dishes__name {
+  margin-left: 20px;
+  font-variant-caps: all-petite-caps;
+  border-bottom: #99E2D0 2px solid;
+  width: 25px;
+}
+
 .menu__dish {
+  position: relative;
   overflow: hidden;
   margin: 1em;
   font-size: smaller;
+  transition: ease-in;
+  width: 100%;
 }
 .menu__dish strong {
   display: block;
@@ -456,52 +455,25 @@ body .main__text {
   overflow: hidden;
 }
 
-.menu__dishes {
-  margin-bottom: 3em;
-}
-
-.menu__dishes__name {
-  margin-left: 20px;
-  font-variant-caps: all-petite-caps;
-  border-bottom: #99E2D0 2px solid;
-  width: 25px;
-}
-
 .menu__price {
   margin-bottom: 1em;
   margin-right: 1em;
   font-size: small;
   font-weight: 600;
-  transition-property: width;
-  transition-duration: 0.6s;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   transition-timing-function: ease-in-out;
-  transition-delay: 0s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  width: 1em;
-}
-
-input {
-  display: none;
-}
-input:checked + label .menu__price, input + label:hover .menu__price, input + label:focus .menu__price {
-  width: 1.5em;
-}
-input:checked + label .menu__check, input + label:hover .menu__check, input + label:focus .menu__check {
-  transform: translateX(-100%);
-}
-input:checked + label .fa-check-circle, input + label:hover .fa-check-circle, input + label:focus .fa-check-circle {
-  transition: transform 0.5s 0.2s ease-in-out;
-  transform: rotate(0);
 }
 
 .menu__check {
   background-color: #99E2D0;
-  position: absolute;
-  left: 100%;
+  width: 0;
   height: 100%;
+  right: 0;
+  top: 0;
   border: 2px solid #99E2D0;
-  transition: transform 0.5s ease-in-out;
 }
 .menu__check .fa-check-circle {
   color: white;
@@ -511,6 +483,20 @@ input:checked + label .fa-check-circle, input + label:hover .fa-check-circle, in
   margin-left: 0.1em;
   transform: rotate(-180deg);
   transition: transform 0s 0.5s ease-in-out;
+}
+
+input {
+  display: none;
+}
+input:checked + label .menu__dish, input + label:hover .menu__dish, input + label:focus .menu__dish {
+  width: 80%;
+}
+input:checked + label .menu__check, input + label:hover .menu__check, input + label:focus .menu__check {
+  width: 20%;
+}
+input:checked + label .fa-check-circle, input + label:hover .fa-check-circle, input + label:focus .fa-check-circle {
+  transition: transform 0.5s 0.2s ease-in-out;
+  transform: rotate(0);
 }
 
 @media (min-width: 768px) {
@@ -559,43 +545,11 @@ input:checked + label .fa-check-circle, input + label:hover .fa-check-circle, in
     flex-basis: 100%;
   }
 
-  .main__name {
-    margin: auto;
-    margin-bottom: 1em;
-  }
-
-  .main__card {
-    margin: auto;
-    margin-bottom: 1em;
-    width: 90%;
-    height: auto;
-  }
-  .main__card .main__card__descr {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    padding: 15Px;
-  }
-  .main__card .main__card__descr .main__card__descr__text {
-    flex-basis: 70%;
-  }
-  .main__card .main__card__descr .main__card__descr__text h3 {
-    font-size: 0.8em;
-  }
-  .main__card .main__card__descr .main__card__descr__text p {
-    font-size: 0.8em;
-  }
-  .main__card .main__card__descr .main__card__descr__text .main__card__descr__price {
-    font-size: 0.8em;
-    padding-bottom: 0.5em;
+  header {
+    width: 70%;
   }
 }
-.header {
-  width: 70%;
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .image_logo {
     max-width: 1500px;
     border-radius: 40px 40px 0 0;
