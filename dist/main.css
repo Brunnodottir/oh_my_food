@@ -1228,10 +1228,10 @@ body .main__title {
   font-size: xx-large;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
-  -webkit-transition: -webkit-transform 0 0.5s 0.2s ease-in-out;
-  transition: -webkit-transform 0 0.5s 0.2s ease-in-out;
-  transition: transform 0 0.5s 0.2s ease-in-out;
-  transition: transform 0 0.5s 0.2s ease-in-out, -webkit-transform 0 0.5s 0.2s ease-in-out;
+  -webkit-transition: -webkit-transform  0.5s 0.2s ease-in-out;
+  transition: -webkit-transform  0.5s 0.2s ease-in-out;
+  transition: transform  0.5s 0.2s ease-in-out;
+  transition: transform  0.5s 0.2s ease-in-out, -webkit-transform  0.5s 0.2s ease-in-out;
 }
 
 input {
