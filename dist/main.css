@@ -338,7 +338,6 @@ footer .minilogo {
   }
 }
 .explore {
-  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -389,8 +388,8 @@ footer .minilogo {
 
 @media screen and (min-width: 1200px) {
   .explore {
+    background-color: white;
     font-size: larger;
-    background-color: transparent;
     padding: 1em;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
